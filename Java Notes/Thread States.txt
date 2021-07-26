@@ -1,0 +1,18 @@
+start()
+stop()
+ 
+run()
+sleep()
+
+suspend()
+resume()
+
+wait()
+notify()
+notifyAll()
+
+New Thread State
+Runnable State
+Running State
+Not Runnable State
+Dead State

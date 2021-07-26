@@ -1,0 +1,4238 @@
+-	Core Java Programming
+
+1.  Introduction to Java
+2.  Features of Java
+3.  Java Virtual Machine (JVM) / Java Runtime Environment (JRE)
+4.  Java Development Kit (JDK)
+5.  Structure of a Java Program 
+6.  Fundamentals of Java / Java Edit-Compile-Run Cycle (ECR)
+8.  I/O Functions in Java
+
+9.  Control Statements in Java Loops, conditions, switch
+10. Arrays in Java
+11. Functions in Java
+==================================================  
+12. Concepts of Object oriented programming 
+  1. Encapsulation 2. Inheritance 3. Polymorphism
+13. Graphical User Interface programming
+  1. AWT  2. Swing
+
+
+14. Event Handling in Java
+
+15. Applet programming
+  1.  Graphics Programming   2.  Interactive Applets
+
+16. Exception handling
+17. Multithreading in Java
+18. Additional Features of AWT / Swing
+  1. Menus   2. Tabbed Panel
+19. Java Stream classes & Java IO (*****)
+20. Java Class libraries
+  1. String / StringBuffer / StringTokenizer / Vector / Enumeration / Math
+  3. Wrapper classes / Inner Classes
+21. Collection classes, Reflection (*****)
+22. Database Connectivitiy
+23. Introduction Network Programming
+24. Mini Project.
+
+1.	Introduction to Java
+
+- Java language was developed at Sun Microsystems, USA in 1991 by "James Gosling" and "Patrick Naughton".
+
+- Java was developed from an earlier language called "Oak", also developed at Sun Microsystems.
+
+- Oak was hardly used for 2 years and then modified to become Java.
+
+- Java was originally developed to write programs for electronic household devices like "Microwaves oven, Washing Machines or fridge other non-computer devices".
+
+- In 1995 Java was identified as "web programming language".
+
+- Later on within 3 years of its introduction it was promoted as "internet programming language".
+
+- from that time (1991) till today (2018) java was modified, updated and enhanced to become very powerful language or also called "Java Technology or Java Platform".
+
+- 20 Billion devices run Java, all over the world.
+
+- Java is now a product of Oracle. Oracle purchased Java from Sun Microsystems.
+
+- There are 3 levels of Java.
+
+a. J2SE   - Java 2 Standard Edition (Core Java)
+b. J2EE   - Java 2 Enterprise Edition (Advanced Java)
+b. J2ME   - Java 2 Micro (Mobile) Edition 
+(Java for mobile and hand held devices)
+
+- Java was developed from C and C++ 
+
+- There are NO complex features of C and C++ in Java like pointers, structures, preprocessors, unions, multiple inehritance, virtual functions. etc.
+
+- many new features are added to java.
+
+- Java is a very easy and simple language.
+
+- Easy to learn and use.
+
+2.	Features of Java
+
+- There are 10 important features of java
+
+1. Java is Platform Independant language or WORA 
+(Write Once Run Anywhere) (*****)
+Java programs can run any operating system and any hardware.
+
+Hardware (Computer) + OS = Platform
+
+2. Java is Object Oriented Programming language
+(OOPS)
+
+3. Java is Compiled and Interpreted
+
+- A java "compiler" compiles a "java source code" 
+(original program) into "Byte code"    
+    - Developer Computer (programmer)
+
+- A java "interpreter" or JIT Compiler which part of JVM 
+(Java Virtual Machine, Just In Time Compiler) converts byte code into machine code. 
+    - User computer
+
+                 compiler            interpreter
+Java Source Code --------> Byte Code --------> Mc Code
+
+- All modern operating systems come with "JRE" and JVM is a part of JRE. Every modern OS is Java-Ready i.e. ready to Java program.
+
+4. Java is Simple and Easy
+- It is easy to learn and use Java since all complicated features of C and C++ are removed in Java.
+
+5. Java is Distributed language
+- The internet java programs are distributed across the world on different computers (servers)
+
+6. Java is Multithreaded (*****)
+- Multithreading executing more than one tasks or jobs simulteniously.
+- Java has a full support for multithreading.
+
+7. Java is Secured and Virus Free
+- The inetrnet java program does not carry any virus.
+- java never distribute viruses.
+
+8. Java has Garbage Collection or GC.
+- GC is very important feature by which all unused and dead objects are collected and destroyed from the memory, automatically.
+
+9. Java has Exception Handling or Runtime Error Handing.
+- Errors can come while program is in execution or it is 
+running such errors are called Exception or runtime error.
+Java has facility to avoid runtime errors by Exception Handling.
+
+10. Java is Robust and Powerful
+- Java application or program rarely crash.
+
+- Java is an ideal language for Web Development and web programming.
+- Java is mostly used for Web Application Development.
+
+3. Java Virtual Machine (JVM) / Java Runtime Environment (JRE) / Java Development Kit (JDK)
+
+- JVM is a Java component that runs a Java program
+- The JVM is part of all Operating Systems.
+- It is already present in all computers.
+- The JVM comes with JRE (Java Runtime Environment)
+- Every OS contains JRE.
+
+JDK ( Java Development Kit ) 
+-- installed on Developers computer and JRE already present
+
+JRE  -- Target computer or end user computer
+
+-  The JRE should be present in runtime systems or end user's computer.
+- It is part of every operating systems. 
+
+
+Programmer Computer  - JDK + JRE
+Users Computer       - JRE (Present in all Modern OS)
+
+4.	Java Development Kit (JDK)
+
+- Java Development kit is required to compile, document and debug a java programs. 
+- It should be installed on programmer's or developer's computer.
+
+There are many versions of JDK
+
+JDK 1.0, 1.1, 1.2  (Java 2)
+JDK 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9 (Recently Launched)
+
+They are now called as Java SE 8, Java SE 11 (Java SE 13)
+
+5. structure of a java program
+
+class SampleProgram
+{
+      public static void main(String args[])
+      {
+	       System.out.println("Hello world, from Java");
+      }
+}
+
+SampleProgram.java
+
+1. A Java program must be written in a class
+   Save the program by classname and .java Extension.
+
+2. The class name is user defined and created  by the user it begins with Capital letter and each next word begins with capital.
+
+3. main() function is always written inside the class. It is the entry point function like C.
+
+4. public static void main(String args[]) must be written in same order.
+
+5. A program can be written inside main()
+
+6. System.out.println() prints output on the screen, same as the printf() in C language.
+
+7. The program can be written in any text editor like notepad (never use), "sublime", atom or visual studio code and must be saved by the name of class and .java extension
+
+8. The program is compiled on the command prompt by javac compiler
+
+d:\eveningj java>javac SampleProgram.java
+
+9. If there are no errors then a .class file is created
+ex. SampleProgram.class (Byte Code)
+
+10. Finally the program can be run by java interpreter
+
+d:\eveningj java>java SampleProgram
+
+
+6.  Fundamentals or basics of Java
+
+- There are 5 fundamentals of java.
+
+a. Data Types of Java
+
+- There are 2 categories of data types
+
+1. Basic Data Types or Native data type or fundamental data type
+
+There are 8 data basic types in Java
+
+1. byte      4
+2. short     8
+3. int (***) 16 
+4. long	     32 bits
+---------- All are integer types i.e. numbers without decimal point like rno
+
+5. float  -  7 digits after decimal point.
+6. double - 15 digits after decimal point.
+
+7. char		  ---------- single data in single quotes ' '  like '1'   'a'   '+'  'Z'  '?'
+
+8. boolean	---------- it is logical data type which can store true or false.
+
+    boolean status;
+		status = true;
+
+    boolean flag = true;
+
+2. Derived or Abstract data types
+
+- These data types are the Java classes that come from java packages (like header files of C and C++)
+
+- A package is collection of "classes and interfaces".
+
+- In Java there are many java Packages which are like header files in C
+
+- Each package contains collection of classes which are similar to functions of C.
+
+- There are many java packages in JDK.
+
+- Each package has a collection of classes.
+
+- The package can be used in Java program and its classes can be declared. 
+
+- There are large nuymber of packages in Javac but 6 basic or standard packages common used in program.
+
+- There are 6 common and regularly used packages.
+
+java.io, java.util, java.lang, java.net, java.awt, java.applet (Java Packages contain Classes)
+- Every classname must begin with capital letter.
+
+The most common classes are ...
+
+String - class -- any collection of data in " " or double quotes. 
+
+"sudhir" "ram nagar" "444605"  "a/23"
+
+Vector
+StringBuffer
+StringTokenizer  ---- java.util
+Math             ---  java.lang
+Enumeration
+
+- The JDK contains many java packages which are like header files of C or C++
+
+- Each package contains a set of related classes and interfaces.
+
+- to use a package in a program an import statement is written at the start of program.
+
+import java.io.*;
+import java.util.*;
+
+b. Keywords in Java
+
+- They are reserved words of java or keywords of Java and each word has a special meaning and activity in the program
+
+- Almost all keywords of C and C++ are available in java in addition java has a "set of new keywords"
+
+byte short int long float double boolean char if else for do while break continue switch case default void return goto static const (C like keywords) 
+
+public private protected class interface extends implements new try catch throw throws finally (Java new keywords)
+
+c. Constants and variables
+
+- A constant is data in a program that remains constant or unchanged till the end of the program and the value does not change.
+- a const keyword may be used to declare a constant
+
+const float pi = 3.14f;
+
+- A variable is a word defined by the user to store some data or value which may change till the end of program.
+
+- A variable is declared by using a data type, before using the variable in the program.
+ex.
+
+int a, b, c;
+float area, rad;
+String name, addr, city;
+
+d. Operators in Java
+
+- Operators are symbols or special characters that operate on the data.
+
+a. math. or arithmatic operators 
+
++	Addition	          c = a + b
+-	Subtraction	        c = a - 10
+*	Multiplication      x = y * 3
+/	Division	          a = b / 10
+%	Modulous	          x = b % 2  (remainder of division)
+++	Increment	        x++
+--	Decrement	        x-- 
+
+b. Relational op
+- All relational operators return true or false.
+
+==	Equal to	        (a==b)
+!=	not equal	        (a!=10)
+>	greater than	      (x>y)
+>=	greater than eq   (a>=10)
+<	less than	          (x<20)
+<=	less than eq	    (x<=y)
+
+c. Logical operators
+
+&&	logical AND     	(a>b && a>c)
+||	Logical OR	      (a>b || a>c)
+!	  Logical NOT	Unary operator or negation
+
+a = 10
+b = 7
+c = 11
+
+(a>b && a>c) - false
+(a>b || a>c) - true
+
+e. Comments in Java
+
+- Comments are never compiled and executed by the compiler
+- They are statements or lines in a program by-passed or ignored by the compiler.
+- Comments are not compulsory and without comments programs runs
+- But writing comments is a good habit. 
+- They are useful in understanding the program and describing the program.
+- There are 2 types of comments
+
+1. Single line comment  //
+
+// this is a single line comment
+// jhgjhgjhgj
+//
+//
+
+2. Multiline comment   /*    */
+
+/*
+djsfhdsf sdfkljsdf sdfkjsdf
+sdfkljsdfsdjfsdfklsdf sdfkljsdf
+reryhtgreterter]
+werwerwerwerwerwe
+*/
+
+Programming with Java
+
+A. Input / Output functions in Java
+
+- The output function prints data and program output on the screen.
+- The output functions are of two types
+
+1. System.out.println()	     2. System.out.print()
+
+1. System.out.println()
+
+- This functions sends control to next line after data is printed on screen.
+
+System.out.println("Hello Java !!!");
+System.out.println("Happy Programming");
+
+Helo Java!!!
+Happy Programming
+
+2. System.out.print()
+
+- This function keeps control on the same line
+
+ex.
+
+System.out.println("Hello and welcome to Java");
+System.out.println("And happy programming");
+
+System.out.print("Hello and welcome to Java ");
+System.out.print(" And happy programming");
+
+Hello and welcome to Java  And happy programming
+
+Some example programs
+
+1. Area of circle
+2. Area of Triangle
+
+HW programs
+
+3. Simple interest calculation  (p*n*r) / 100
+4. Convert dollar to rs.
+5. Volume of cylinder  --- 3.14f * (rad * rad ) * ht
+
+2. Input data from keyboard
+
+- To enter data from keyboard there are three different methods 
+- These methods are like scanf() function in C language.
+- There are Input classes.
+
+1. DataInputStream    2. BufferdReader     3. Scanner
+
+1. DataInputStream
+
+- This class comes from java.io package
+
+- A java package contains a large number of ready to use classes. A package is like header (.h) files of C
+
+- A java package is used in a program by using import statement at the begining of program.
+
+ex.
+
+import java.io.*;
+
+-- import all classes of java.io package.
+
+import java.io.DataInputStream;
+
+- The object (variable) of DataInputStream class is declared and initialised using System.in property 
+(System.in means keyboard or standard input device)
+
+ex.
+
+DataInputStream in; // variable of a class is called Object
+
+in = new DataInputStream(System.in); 
+
+// initalize or instantiate System.in is keywboard
+
+DataInputStream in = new DataInputStream(System.in);
+
+(camel casing is a method of writing function that begins with small letter and next each word begin with capital ex. printStudentResultData() )
+
+- readLine() function can be used to enter data from keyboard.
+- The readLine() function inputs any data as a string data.
+- The int  and float data are converted using special conversion functions.
+
+Integer.parseInt() --- convert string to int
+Float.parseFloat() --- convert string to float
+
+in.readLine() --- reads from keyboard only as String data.
+
+ex.
+
+1. Integer.parseInt()    --- String to int
+2. Long.parseLong()      --- String to long
+3. Float.parseFloat()    --- String to float
+4. Double.parseDouble()  --- String to double
+
+- While entering data from keyboard the java must handle the runtime error or exception.
+
+- The handling of runtime error is also called Exception Handling.
+
+- The statements that input data from keyboard should be written in "try and catch" block
+
+
+printStackTrace();
+
+ex.
+
+try
+{
+   -------    
+   -------
+}
+catch(Exception ex)
+{
+     System.out.println("Some error occured " + ex);
+     System.exit(0); // close the program
+}
+----
+----
+----
+
+- All the input statements are written try block, if any error comes then control goes to catch block and displays an error message
+- If NO error occurs then the program continues.
+
+- A java program have many keyboard inputs at various stages of the program. In such cases a throws statement can be used which is applied to a function.
+- If the throws statement is used then there is no need of try and catch blocks which reduces program size the program becomes easy to look and understand.
+
+ex.
+
+public static void main(String args[]) throws Exception
+{
+
+
+
+}
+
+- HW programs
+
+
+2. BufferedReader method
+
+- This is a second method to read data from keyboard
+- There are 2 classes used in this method
+- This method is more popular than DataInputStream methods.
+- It is more faster and effecient.
+
+1. BufferedReader    2. InputStreamReader
+
+- Both classes come from java.io package
+
+ex.
+
+BufferedReader in = new BufferedReader(new InputStreamReader(System.in)));
+
+- The in.readLine() reads data from keyboard.
+
+3. Scanner 
+
+- It is newest method to input data from keyborad
+- It is very common and popular method
+- Scanner class comes from java.util package.
+- This class does not require "try and catch or throws exception".
+
+ex.
+Scanner in = new Scanner(System.in);
+
+- There is NO readLine() function
+- there are many functions of Scanner class
+
+1. next()       -- to read string data
+2. nextInt()    -- read int
+3. nextFloat()  -- read float
+4. nextLong()   -- read long
+5. nextDouble() -- read double
+
+
+
+1. Convert cent to far
+
+f = ( c-32 ) * ( 5/9 )
+
+2. Eintsein formula
+
+e = m * ( c * c )
+
+3. Volume of cylinder
+
+vol = 3.14f * (rad * rad) * ht
+
+
+2. Control statements in Java
+
+- The control statements are used to control the flow of a program.
+- They are also used to develop the program logic.
+- The control statements are very important in java program.
+- There are 4 control statements in Java which are exactly same as C and C++
+
+1. Loops in Java		  2. Conditional Statements in Java
+3. Switch structure		4. Control breaks
+
+1. Loops in Java
+
+- A loop is a set of statements executed repeatadely till some condition becomes satisfied.
+
+- The loop starts which an initial value and ends at an ending value.
+
+- All loops are same as C and C++
+
+a. for loop		    
+b. while loop	         
+c. do...while loop    
+
+a. for loop
+
+- It is very common and popular loop and commonly used in programs
+- This loop is used as numeric "iterative" processing 
+(repatative)
+- It is very regularly used loop in java 
+
+ex.
+
+for(i=1;i<=10;i++)
+    --------------------------;
+
+for(i=1;i<=10;i++)
+{
+   ------
+   ------
+   ------
+} // program block 
+
+- if there are 2 or more statements executed in the loop then they must be written in a program block { }.
+
+- in java variables can be declared anywhere in the program and compusorily in the begining of the program.
+
+- Declaring all variable in the begining comsumes memory and the program become difficult to handle.
+
+for(int i=1;i<=20;i++)
+   -------------
+
+1. Fibonacci Series
+2. Factorial of N
+3. Multiplication Table
+4. Triangular Number Series
+
+
+Variations of for loop
+
+- A for loop is very important and popular loop.
+- It is most commonly used loop in programs.
+- It can be used in many ways.
+
+1. for(i=1;i<=10;i++)
+2. for(i=1;i<=n;i++)
+3. for(i=1;i<=n;i+=3) // increment by
+4. for(i=10;i>=1;i--) // reverse loop
+5. for(i=n;i>=1;i--)  // backward loop from n to 1
+6. for(i=n;i>=1;i-=5) // revsrse loop with decrement of 5
+7. for(;i<=10;i++)
+---
+---
+---
+---
+i = n + 2;
+-----
+-----
+-----
+for(;i<=x;i++)
+{
+  
+}
+
+for(i = n + 2;i<=x;i++)
+{
+  
+}
+
+8. for(i=1;;i++)  
+    System.out.println(i);
+
+9. for(i=1;i<=10;)
+     System.out.println(i);  
+
+
+10. for(;;)  
+
+
+
+--- pure infinite loop, sometimes very useful loop in java. Generally used in developing servers of various types.
+
+
+for(;;) { }
+  System.out.println("Hello");
+
+
+11. nested for loop.
+
+- Two or more for loops written and executed one inside another.
+- There is an outer loop and inner loop
+- The inner loop completes first and then outer loop continues.
+
+  for(i=1;i<=4;i++) // outer loop
+    {
+       for(j=1;j<=3;j++) // inner loop
+       {
+           ----
+       }
+    }
+
+- This is an imp. type of loop used in many programs like array sorting, matrix programs, multi dimension array programs and number pyramids.
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+5 5 5 5 5
+4 4 4 4 
+3 3 3
+2 2 
+1
+
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+4 4 4 4 
+3 3 3
+2 2 
+1
+
+*
+* *
+* * *
+* * * *
+* * * * *
+  
+2. while loop in java
+
+- the while is the second loop of java and  it is same as that of C language
+- the while loop can be used in two ways.
+
+1. while loop as numeric iterative loop (repteatative) 
+2. while loop as a logical loop
+
+1. while loop as numeric iterative (repteatative) 
+
+- in this type, the while loop exactly works like a for loop when used as a numeric loop
+-  for loop has all three statement written together and while has the statememt separated.
+ex.
+
+i=1;
+while(i<=10)
+{
+   -----
+   -----
+   i++;
+}
+
+for(i=1;i<=10;i++)
+{
+  ------
+  ------
+}
+
+Triangular Number Series
+
+1  1
+2  3
+3  6
+4  10
+5  15
+6  21
+7  28
+8  36
+..
+
+2. When while loop is used as logical loop it checks a logical condition which can be either true or false.
+
+- the while loop more popular as a logical loop where loop executes till some logical condition statisfies.
+
+ex.
+
+while(true)
+{
+   -----
+   -----
+}
+
+
+3. do...while loop
+
+- The third loop of Java is do...while loop
+
+- It is almost same as the while loop and it can also be used as numeric and logical loop.
+
+- The do loop checks program condition at the end of the the program block whereas the while loop checks condition first and then executes the block.
+
+- The do loop executes at least once.
+
+ex.
+
+i=1;
+do
+{
+  -----
+  -----
+  i++;
+}
+while (i<=10);         
+--- Post condition loop or exit loop
+
+
+i=1;
+while(i<=10)           --- Pre condition or entry loop
+{
+   -----
+   -----
+   i++;
+}
+
+- The do loop executes at least once since it checks condition at the end,
+
+
+
+Triangular addition
+
+1  1
+2  3
+3  6
+4  10
+5  15
+6  21
+7  28
+8  36
+.
+.
+.
+n
+
+
+There are 3 methods to enter data from from keyboard
+
+1. DataInputStream method **
+2. BufferedReader and InputStreamReader method
+3. Scanner method
+
+2. BufferedReader and InputStreamReader
+a. import java.io package
+b. create object of BufferedReader useing object of InputStreamReader
+
+import java.io.*;
+
+BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+in.readLine()
+
+3. Scanner method
+
+import java.util.*;
+
+Scanner in = new Scanner(System.in);
+
+in.next() --- reads string data
+in.nextInt() --- reads int data
+in.nextDouble() --- reads int data
+in.nextFloat() --- reads int data
+in.nextLong() --- reads int data
+
+
+C. Conditional statements in Java
+
+- The conditional statements are equally imporatnt as the loops or looping statements.
+- They also help in defining logic of the program
+- Java has a standard if....else condition statements where if statement checks a condition and on condition true executes some statements.
+- The conditions of Java are same as C language.
+
+- The conditional construct of Java is again same as the C language.
+
+ex.
+
+if(a>=20)
+{
+  -----
+  -----
+}
+----
+----
+
+- Generally there are 4 types of conditions in Java
+
+1. One way or single condition or simple condition or singleton condition
+
+- There is only one if statement and a condition and only one set of executing statements. 
+- There is NO other option.
+
+
+if(a>=20)
+{
+  -----
+  -----
+}
+------
+------
+
+- There is no second option in this condition.
+
+2. Two way condition or multiple condition
+
+- This conditional construct has one if statement, one condition but there are 2 sets of executing statements.
+
+- The first set executes on condition true and second executes on condition false,
+
+if(a>=10)
+{
+   ----
+   ----
+}
+else
+{
+   ----
+   ----
+}
+
+
+HW Program
+
+- Find largest number in n different numbers.
+
+- Find all odd numbers and event numbers in n different numbers and find the average od odd and even numbers.
+
+
+
+3. complex condition or compound condition
+
+- This condition has a logical operator, generally used between 2 or more conditions 
+
+- This condition is also called compound condition.
+
+- The logical operators are && (and) , || (or)
+
+ex.
+if(a>b && a>c)
+{
+  
+}
+else
+{
+  
+}
+
+if( a>b || a>c )
+{
+  ----
+  ----
+}
+else
+{
+  ----
+  ----
+}
+
+if( (per >=70 && per <=80) || phy >=85 )
+{
+  
+}
+
+4. Multilevel condition
+
+- A nested condition has 2 more conditional constructs written in nested fashion or written downwards into multiple levels. 
+
+if(code=='a')
+{
+   ----
+   ----
+}
+else
+if(code=='b')
+{
+    ----
+    ----
+}
+else
+if(code=='d')
+{
+   ----
+   ----
+}
+else
+if(code=='i')
+{
+    -----
+    -----
+}
+else
+{
+  -----
+  -----
+}
+
+
+3. switch structure in Java
+
+
+- Switch structure is exactly same as the C language.  
+
+- The switch statement is a "selection statement" and used to select one option from a list of various options.
+
+- The switch structure of java is same as that of C language.
+
+- The switch statement is supported by 
+case, break and default statements.
+
+- The switch statement has a switch variable which can be either int or char or string (java).
+
+- Each case is exceuted by a case statement and at end of each case there is break statement.
+
+- A defualt statement "may be written" or not compulsory after all cases to print error message of some system message.
+
+ex.
+switch(variable)
+{
+    case 1 :
+        -----
+        -----
+        break;
+    case 2 :
+        -----
+        -----
+        break;
+    case n :
+        -----
+        -----
+        break;
+   default :
+       ------------------
+}
+
+- A switch structure is better alternative to multilevel conditions.
+
+1. Find a day of week from a number
+2. Find a vowel or consonent -- both using switch statement.
+
+6. Arrays in Java
+
+- Array is very common and popular data structure in all programming languages.
+- Arrays play important role in programming
+
+- An array is a collection of data with same data type or similar data type.
+
+- An array is useful to store data of same type in the memory and then process the data.
+
+- An array a "basic collection" or sequence.
+
+- Array is declared using data type, name of array and [ ]
+
+- Each data of array is called Element and every element has an array address or index that begins with 0 and left to right.
+
+- There are two types of arrays
+
+1. Single dimension  array     
+2. Multi dimension array
+
+
+1. Single dimension array
+
+- In a single dimension array the data is stored on one dimension only.
+
+- Every element of Single dimension array has a single index that begins with 0.
+
+int x;
+x=20;
+x=50;
+x=30;
+
+ex.
+
+            0 1 2 3 4 5 6 7 8
+int a[] = { 1,2,3,4,5,6,7,8,9 }; // predefined array.
+
+// array declaration
+int a[], i, j, t;   ----- array and simple variables.
+int[] a, b, c;      ----- all are considered as arrays. Not possible in C/C++
+
+int a[100] ---- in C and C++
+
+- In Java, the array size, at the time declaration is unknown
+
+- Later on array can be initialized by using "new" operator.
+
+ex.
+
+
+
+int a[];
+
+- Array initialize
+
+a = new int[10]; -- array of 10 elements [ 0 to 9 ]
+a = new int[n];  -- array of n elements [ 0 to n-1 ]
+
+- Finally a single dimension array can be processed by a simple for loop.
+
+- The for loop executes from 0 to n-1.
+
+- Arrays are very important and commonly used in programs java programs.
+
+- Each SDA, in java has a built-in property called length which returns an int value that the length or size of array.
+
+int a[]; // declare an array
+a = new int[10]; // initialize the array
+
+System.out.println("Length of array is " + a.length );
+
+length is the property of any type of array which gives the size of array.
+
+Single dimension array programs
+
+1. Sorting of array
+    1. Selection Sort
+    2. Bubble sort
+
+2. Searching of array
+    1. Linear Search
+    2. Binary Search
+
+a. Sorting of array
+
+- sorting of array arranges the data of an in ascending order.
+
+- Compare two elements and exchange using a temp variable.
+
+- There are many array sorting methods like selection sort, bubble sort, partition sort, merge sort, quick sort, shell sort.
+
+1. Selection Sort
+        0   1   2    3    4    
+a   =   2   3   4    5    7  -- unsorted array
+
+0>1     1>2    2>3   3>4	
+0>2     1>3    2>4
+0>3     1>4
+0>4
+
+Pass    Pass   Pass  Pass
+
+1. Bubble Sort
+        0   1   2  3   4    
+a   =   2   3   5  7   9  
+
+0>1   0>1   0>1   0>1
+1>2   1>2   1>2
+2>3   2>3
+3>4
+
+b. Searching of array 
+
+- Searching of array is process of finding an element or data in a stored array
+- If the data is found then "Data Found" message can be displayed with its array location.
+- If the data is not found in the array till end then "Data Not Found".
+- There are 2 methods of searching 
+
+1. Linear Search method	          
+2. Binary search method
+
+1. Linear Search method
+
+- It is very simple, easy and common method in which a number is matched with each data in array from the begining till the end of array 
+
+- If the data is matched is searching is stopped
+         0   1   2   3   4
+a    =   9   1   5   7   2 
+
+x = 8
+
+2. Binary Search an Array
+
+- In this type of searching the array must be sorted before the searching starts
+
+- The linear search does not require the sorted array.
+
+- The binary searching is very fast as compared to linear search.
+
+- There are 3 variables 
+
+lb - lower bound - starting address of array 0
+ub - upper bound - largest index in the array n-1
+mid - calculated as the (lb+ub) / 2
+
+- Match the array element with data if matched then print array address and stop searching.
+-  if not matched then check lower or uuper half.
+
+     0 1 2 3 4
+a =  3 5 7 8 9
+n = 8
+
+lb = 0
+ub = 4
+mid = 2
+if (n==a[mid])
+if (n>a[mid]) lb = mid+1; else ub = mid-1;
+
+===================================================================================
+
+b. Multi-dimension Arrays
+
+- The data in the MDA are stored on 2 or more dimensions.
+- The most popular, common and widely used MDA are the 2-D arrays.
+- They are also called Matrix or Matrices.
+- There are large number of matrix applications and uses of matrix.
+- The matrix are also popular in developing board games.
+- The elements in a 2-D are stored on rows and columns.
+- The rows are horizontal and columns are verticle
+- Each element or data of 2-D has "row" and "column" address.
+- Both of them begin with 0
+  
+          0    1    2
+------------------------  
+    0     1    2    3
+    1     4    5    6
+    2     7    8    9
+
+- the matrix can be processed using 2 nested for loop
+- outer loop represents rows and inner loop represents columns.
+- The 2-D is declared using data and two [] both empty.
+
+ex. 1
+
+int a[][],i,j; 
+-- one method of declaring 2-D array
+                  array with variables.
+ex. 2
+
+int[][] a,b,c;  
+-- second method declares all arrays
+
+ex.
+
+int a[][];		           
+----- Declare a matrix w/o size
+a = new int[3][3];       
+----- Initialize a matrix
+
+int a[][] = new int[4][4];
+
+- There are 2 ways to declare a matrix
+
+1. Predefined matrix -- The data is pre-declared.
+
+int a[][] = {1,2,3,4,5,6,7,8,9};
+
+float x[][];  -- empty array
+
+Programs of Matrix
+
+0. Addition of all data in matrix.
+2. Addition of rows in Matrix
+
+1 2 3 = 6
+4 5 6 = 15
+7 8 9 = 21
+
+1. Transpose a matrix
+
+
+2. Addition of column
+
+1   2   3 
+4   5   6 
+7   8   9 
+=   =   =
+12  15  18
+
+3. Diagonal addition (Only possible in square matrix)
+
+
+4. Reverse diagonal addition
+   4 - 5 programs
+
+5. Identity matrix
+
+1  0  0
+0  1  0
+0  0  1
+
+
+
+6. Multiplication of Matrix
+
+   0 1 2 3        i j
+
+0  0 0 0 1        0 3
+1  0 0 1 0        1 2  
+2  0 1 0 0        2 1
+3  1 0 0 0        3 0
+
+1. Transpose a matrix
+
+- The rows are transposed to columns.
+
+1 2 3
+4 5 6
+
+1 4
+2 5
+3 6
+5. Identity matrix
+
+- the diagonal elements are 1 and others are 0
+
+1 0 0 0 
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+Multiplication of matrix
+     A
+
+   0  1  2
+0  1  2  3 
+1  4  5  6
+2  7  8  9
+    B
+   0  1  2
+0  1  2  3 
+1  4  5  6
+2  7  8  9
+
+C 
+   --  --  --
+
+([0][0]*[0][0]) + ([0][1]*[1][0]) + ([0][2]*[2][0])
+([0][0]*[0][1]) + ([0][1]*[1][1]) + ([0][2]*[2][1])
+([0][0]*[0][2]) + ([0][1]*[1][2]) + ([0][2]*[2][2])
+
+s
+
+0   0   0
+-   -   -
+-   -   -
+
+
+Functions in Java
+
+- A function is a small program or sub program or sub routine or method.
+
+- In java the functions are called Methods.
+
+- A function can be written inside a class with some function name and passing parameters or returning value.
+
+- Function is written or defined once and can be CALLed or invoked any number of times.
+
+- The use of functions make a program easy to handle and manage.
+
+- The program becomes structured and modular.
+
+- the functions make program more effecient.
+
+- The function CALLed from static function must also be declared as static.
+
+- For ex. if main() function CALLs another function, then it must be declared as static, because main() itself is static.
+
+- The function name in Java is written using "Camel case".
+
+ex.
+class FunctionExample
+{
+      public static void displayData()  
+      {
+             System.out.println("Hello and welcome to Java function");
+      }
+      public static void main(String args[])
+      {
+              System.out.println("In main function");
+              displayData();  // function CALL
+              System.out.println("back to main function");
+      }
+}
+
+- Every java program begins execution from main() and the program ends at main().	
+
+- the  main function of all languages is entry point. 
+
+- There are 4 types of functions in java
+
+1. Function without passing parameters or data and without returning value. (simpe function)
+
+    (No passing data and No returning data)
+
+                            return        Passing data
+     ex.       public static void areaTriangle()
+                 {
+                         ------
+                         ------
+                 }
+
+- The void keyword at the left side of function declares that the function does not return any value
+- The empty brackets () specify that no data is passed to the function.
+
+2. Function which passes parameters but does not return a value
+
+- A function may pass any number of parameters or arguments or variable of different data types.
+
+ex. public static void areaTriangle(int ht, int ba)
+    {
+                         ------
+                         ------
+    }
+
+3. Function with returning value but not passing of parameters
+
+ ex.       public static float areaTriangle()
+                 {
+                         ------
+                         ------
+                 }
+
+4. Function that passes parameters (variables) as well as returns a value
+
+ ex.       public static float areaTriangle(int ht, int ba)
+                 {
+                         ------
+                         ------
+                 }
+- A function may pass any number of parameters of different data types but a function returns only one value.
+- A return keyword is used to rerturn a value.
+
+- Procedure Oriented Programming.
+
+
+-- Revision of Part 1
+1. History & Introduction
+2. 
+================== Part 1 Ends ==================================
+
+Object Oriented Programming with Java
+
+Introduction to OOPS (Object Oriented Programming System)
+
+- Java is fully Object Oriented Languages OOPS.
+
+- Generally there are 2 types of programming languages
+   a. Procedure Oriented Languages - C (*), COBOL, FORTRAN, Pascal, BASIC
+
+   b. Object Oriented Languages - C++, Java, C#, php, python, perl, Eifell, Haskell, Closure, D, Pony, Julia, Kotlin, 
+
+- The old method of programming was procedure oriented and the languages were known as procedure oriented languages.
+
+- The procedure oriented program executes in linear fashion from top to bottom.
+
+- The procedure oriented programming became less popular because of some limitations.
+
+- In 1982 a concept was developed called Object Oriented Technology by Grady Booch, he developed concepts of Object Oriented Technology.
+
+- Grady Booch made UML (Unified Modelling Language)
+
+- He did not develop any programming language, he published a book 'Methodology of Object Oriented Technology'.
+
+- He developed a language called Unified Modelling Langugage. It is used for Object Oriented Analysis and Design.
+
+- The limitations of the Procedure Oriented Programming are mainly 
+
+1. Less importance and security to data
+2. Lack of reusability in program
+
+- Procedure oriented programming provides less security and importance to data and more emphasis is on program.
+
+- The programs developed using Procedure Oriented programming  provides less reusability. 
+
+- Both above features are not applicable to modern day programming and software development.
+
+- The OOPS has overcome both the limitations of Procedure Oriented Programming and it perfectly suited for modern programming languages.
+- All modern computer programming languages are Object Oriented except one that is C.
+- The OOPS provides high degree of security to data and great reusability of program.
+- There are 4 features of Object Oriented Technology as decribed by Grady Booch in his book.
+
+- The obect oriented programming very close to the real life.
+
+                      OOT
+                       |
+----------------------------------------------------
+|          |              |             |          |
+OOPS      OODBMS          OOAD         OOCAD    OOOS
+
+- There are 4 imp featutes of OOT and OOPS
+
+1. Encapsulation	2. Inheritance	
+3. Polymorphism   4. Abstraction
+
+1. Encapsulation
+
+- The encapsulation is the fundamental and basic feature of OOPS and all other features are devloped on Encapsulation.
+
+- The encapsulation is the foundation of OOPS.
+
+- Encapsulation refers to creating classes and objects.
+
+- A class is collection of "data and functions" or in general it is collection of "attributes and behaviour". 
+(Attribute is the properties and bevaiour is the activities)
+
+- The object is an instance or example of a class.
+
+- A class a template or a skeleton and the obect is the real life enity or real life model.
+
+2. Inheritance
+
+- This features refers to creating new classes called Derived or sub class from existing class called as Base class or super class.
+
+- The inheritance is extension to the existing class.
+
+- All the features of the base must be available and accessible in the derived class.
+
+- In addition the derived class may have some new properties. hence the derived class is the extension of the base.
+
+3. Polymorphism
+
+- The polymorphism is another imp. feature of OOPS.
+
+- It refers to defining many functions in a class with "same name" but different passing parameters or returning value.
+
+- Many function  whose behaviour  changes based on runtime situation.
+
+- The word polymorphism is made of word poly and morph. Poly is many and morph is forms.
+
+4. Abstraction
+
+- The abstraction refers to hiding all important details form the world and exposing a very things.
+
+- The data abstraction is an important concept in OOPS.
+
+- Only a few things are exposed and all important details are hidden.
+
+Java as Object Oriented Programming Language.
+
+1. Encapsulation 
+
+- Encapsulation refers to declaring class and creating objects from the class.
+
+- A class can be created using class keyword and the name of class which is user defined or created by the user.
+
+- A class contains "data and functions" or also called as "Data Members" and "Member Functions".
+
+- The data in the class should be declared by "private" keyword 
+(Access Modifier or Access Specifier)
+
+- The functions of a class are declared by using "public" keyword.
+
+- The private keyword makes data members of class not accesible outside the class.
+
+- The public functions can be accessed outside the class.
+- In this way data becomes hidden from outside the class.
+
+- The class name is written using camel case where the first letter is also capital. 
+
+ex.
+
+class Student
+{
+    private int rno;
+    private String name;
+    private float per; // data members
+
+    public void setData()
+    {
+         rno = 10; name = "Amey; per = 89.78f;
+     }
+
+    public void showData()
+    {
+        System.out.println("Rno = " + rno + "  Name = " + name + " Per = " + per);
+     } // member functions
+}
+
+Student  s1;   // s1 is the object of Student class
+s1 = new Student();  // instantiate or initialize
+s1.setData();
+s1.showData();
+
+System.out.println("Rno = " + s1.rno + "  Name = " + s1.name + " Per = " + s1.per);  ---- Error
+
+- The object can be created from a class and instantiated or initialized by new operator.
+
+- Lastly the functions are accessed using object and dot operator.
+
+Small programs in OOPS
+
+1. Area of triangle
+2. Area of circle 
+3. Fibonacci numbers
+4. Number pyramid
+
+Topics of Encapsulation
+
+1. Classes and objects   ***
+2. Access modifiers or Access specifiers ***
+  - private
+  - public
+  - protected
+
+3. Constructors in Java
+  - Default constructor
+  - Parameterised constructor
+4. Destructor in java
+  - Finalizer
+
+5. Passing parameters to member function
+6. Returning value from a member function
+7. Static data and functions
+8. Overloading in Java
+    a. Function overloading
+    b. Construcor overloading
+9. Objects and arrays
+
+
+2. Access modifiers or specifiers
+
+- The access modifiers are the keywords used to specify and declare the data member or member functions in a class. They declare the accessibility or visibility of the members in the class (data and functions)
+- There are 3 types access modifiers in Java
+
+1. public		2. private		3. protected
+
+1. public
+
+- The public AM declares that the data member or member function can be accessed anywhere i.e. inside class and outside class.
+- Generally the functions are declared using public keyword and hence can be accessed outside the class.
+- The data should not be declared as public
+
+2. private
+
+- The private AM declares that the data member or member function can be accessed only inside class and not outside class.
+
+- Generally the data of a class are declared using private keyword and hence can not be accessed outside the class.
+
+3. protected (***)
+
+- This access modifier is used in inheritance to declare the data members of a base class.
+
+- The protected specifies that the data are available in the base class as well as the derived class.
+
+3. Constructors in Java
+
+_ the constructor is a speciall function of a class
+
+- The constructor is a very important feature of Java and Object Oriented Programming.
+
+- The constructor is a special member function declared in a class with exactly same name as the class name.
+
+- The contructor is declared with public access modifier and it does not return any value and not even declared as "void" like other member functions.
+
+- The contsructor is used to initialize the data of a class like int is initialized by 0, float by 0.0f, string by "" (blank space) or it is used to set the dat values.
+
+- "The contructor is automatically executed when an object is instantiated using new operator".
+
+- Other functions are CALLed by object name and dot operator
+
+s1.getData();  - s1 is object and getData() function. 
+
+- There are 2 types of constructors 
+
+1. Default or empty constructor
+2. Parameterised or value constructor
+
+class Student
+{
+     private int rno;
+     private String name;
+     private float per;
+
+     public Student() // default constructor
+     {
+           rno = 0; name = "";  per = 0.0f;
+      }
+     public Student(int rno, String name, float per)  
+     // parameterised
+     {
+           this.rno = rno; 
+           this.name = name;  this.per = per;
+      }
+    ----
+    ----
+}
+
+
+Student s1, s2;
+s1 = new Student(); // default constructor
+s2 = new Student(2,"Vijay",78.90f); // parameterised constructor
+
+this keyword
+
+- This keyword refers to the current object in the memory or active in the memory. It also refers to the class data member.
+
+4. Destructor in java
+
+- The destructor is opposite of the constructor, they are executed at the end of the program or when the object goes out of scope.
+
+- A destructor destroys the objects made in the program and clears the memory occupied by the objects.
+
+- The destructors are executed automatically ;like constructors.
+
+- The concept of destructor is called as "Garbage Collection" or GC.
+
+- The Java Virtual Machine automatically calls in-built destructor to destroy the unused and out of scope objects or dead objects, periodically.
+
+- The destructor is not to be written in a class or it is not compulsory.
+
+- The destructor is called a "Finalizer" in java and can be used in class using finalize() function.
+
+- The destructors never return any value or pass any parameters.
+
+ex.
+protected void finalize()
+{
+
+}
+
+- The destructor need not be written in a program. As far as possible do not write the finalizer in java.
+
+
+this refrence
+
+this is very important keyword in java. It refers to the current object active in the memory or in-scope in the memory. "this" pointer is auto-initialized. and it can point to any member of a class.
+
+5. Passing parameters to member function
+
+- A member function or methods  can pass variables which are then assigned to the appropriate data members of the class.
+
+- The names of the variables passed to a function can be different or same the names of the data members (use this reference).
+
+- If the names of the parameters passed to function are same as the data members then a 'this' keyword can be used to refer to the current object.
+
+ex.
+class Student
+{
+      private int rno;
+      private String name;
+      private float per;
+
+      public void setData(int rno, String name, float per)
+      {
+           this.rno = rno; this.name = name; this.per =per;
+     }
+    -----
+    -----
+}
+
+Student s1 = new Student();
+s1.setData(2,"Paresh",78.89f);
+
+- this keyword refers to the current object active in the memory.
+
+6. Returning value from member function
+
+- A function may be written in a class that returns a value using return statement.
+
+- The value returned by a function must be assigned or stored into a variable of same data type.
+
+ex.
+
+public float getPer()
+{
+      return per;
+}
+
+Recap....
+A. Encapsulation
+1. Classes and objects
+2. Access modifiers (private, publlic, protected)
+3. Constructors
+4. Dstructors
+5. Passing data to memeber function
+6. Returning data from member function
+
+7. static data and static functions (***)
+
+- Another important feature of java is static data and methods.
+
+- Every object of a class has a set of private, independant and unique data  or alco called Data members.
+
+- The private data is only accessible by the functions of that object.
+
+- The static data is declared using "static" keyword without private or public access modifier.
+
+- There is only one copy or single copy of static data for the entire class.
+
+- The static data is common to all objects of the class, it is shared data amongst all objects.
+
+- The static data is always accessed using special function called "static functions".
+
+- The static functions are declared using static keyword.
+
+- The static functions are accessed using class name and dot operator.
+
+- The member functions or non-static functions are CALLed using object name and a dot operator.
+
+class Libarary
+{
+  private int bno;
+  private String author, title;
+  private float price; // data members
+
+  static String pubs, subject; // static data
+
+  public void getData()
+  {
+
+  }
+  publib void showData()
+  {
+
+  }
+  public static void showStaticData()
+  {
+
+  }
+}
+
+Library b1 = new Library();
+b1.getData();
+b1.showData();
+Library.showStatcData();
+
+- The data members are also called as "Object Variables" and static data members are called as "Class Variables".
+
+- Member functions can access both static and non-static data memebers but static functions can onlly access ststic data.
+
+                     Member Data/function    Static Data
+Declaration          private/protected         static
+
+Member Functions     Can Access                Can not access
+
+Static Functions     Can not access            Can Access
+
+Calling              Object name and .        Class Name and .
+
+
+8. Overloading in Java
+
+- The overloading is also important feature of Object Oriented Programming and supported by Java
+
+- The overloading refers to defining or writing two or more functions with same name but different passing parameters, in a class.
+
+- Depending upon the parameters passed, during runtime one of the appropriate functions get executed.
+
+- The use overloading makes program faster in executing, effecient and easy to handle and easy to remember the function names.
+
+- It also increases "function reusability".
+
+- There are 3 types of overloading in "Object Oriented Programming" like.
+
+    a. Function overloading
+    b. Constructor overloading
+    c. Operator overloading 
+    (Not supported in java but it is available in C++)
+
+- Many modern OO languages do not support Operator Overloading.
+
+- But java supports only two overlaoding i.e. a and b
+
+a. Function overloading
+
+- A class may contain many functions written with same name but different passing parameters.
+
+public void swap(int a, int b)
+{
+    int tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+    System.out.println("A = " + a + "  B = " + b);
+}
+public void swap(float a, float b)
+{
+    float tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+    System.out.println("A = " + a + "  B = " + b);
+}
+public void swap(String a, String b)
+{
+    String tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+    System.out.println("A = " + a + "  B = " + b);
+}
+
+----
+swap(10,20);
+swap(1.7f,3.5f);
+swap("aaa","bbb");
+
+- An overloaded function may have same number of parameters but different data types.
+
+- An overloaded functions may also have many parameters with same data types or different data types.
+
+void sum(int a, int b, int c)
+{
+  
+} 
+
+void sum(int a, int b)
+{
+  
+} 
+void sum(float a, int b, int c)
+{
+  
+} 
+
+2. Constructor overloading
+
+- The constructor overloading is exactly same is function overloading
+
+- Only parameterised constrcutors can be overloaded.
+
+- Functions can be overloaded till there are NO parameters passed.
+
+- Constructor can overloaded till there is at least one parameter.
+
+
+9. Objects and arrays
+
+- The array of objects is a collection of objects of same class declared as an array.
+
+- The array of object is required when there are many objects created or declared from a class.
+
+- The array of objects are convenient for processing using a for loop and also using foreach loop.
+
+- The array begins with 0 index till the last element in the array.
+
+- There are 2 initilizations in array of object
+  1. Initialize the array with some size
+  2. Instantiate each object in the array using a for loop.
+
+- The arrays and objects or array of objects is very important particularly on collection classes or API.
+
+ex.
+
+Student s[];
+
+s = new Student[5]; // initialize the array size ---- 1
+
+for(i=0;i<5;i++)
+    s[i] = new Student();  
+
+    // initialize each object in the array  ---- 2
+
+
+2. Inheritance in Java
+
+- The inheritance is second important feature of Object Oriented Programming and supported by java.
+
+- The inheritance is defined as a method of creating new classes called derived classes or sub classes or chilld classes from the existing class called base class or super class or parent.
+
+- The first class is called as base class or super class and the second class is called the derived or sub class.
+
+class A  -- base
+|
+|
+class B  -- derived
+
+- The super class is declared first and then the sub class is declared.
+
+- The data members of the super class or base class must be available and accessible in the sub class or derived class.
+
+- The data in the super class or base class should be declared using protected access modifier
+
+- The protected keyword makes data available in the super class as well as the sub class.
+
+- But outside sub class data becomes private.
+
+- The sub class data can be declared as private.
+
+- An extends keyword is used to declare a sub class from the super class.
+
+
+class A
+{
+  
+  protected ----
+  public ----
+}
+
+class B extends A
+{
+  private ----
+  public ----
+}
+
+- There are many types of inheritance in OOPS ...
+
+1. Simple or single inh.*	  2. Multiple inh.	
+3. Multilevel inh.	*       4. Multipath inh.
+5. Hybrid inh	.             6. Heirarchical inh Tree
+7. Containership            8. Delegation
+
+- All types of inh. are available only in C++
+
+- But java and modern languages other than C++ support only two inheritance  
+
+1. simple inh.     2. multilevel inh.
+
+Types of Inheritance
+
+1. Simple inh (**)
+- This inheritance has one base class and one derived class
+- or it may have one base and many derived.
+
+	A	base class
+	|
+	B	derived class
+
+
+2. Multiple inh
+- This inh has two or more base classes and one or more derived classes
+
+	A	           B	base
+	|            |
+	-------------   
+         |
+	       C		derived
+
+3. Multilevel inh (**)
+
+- There are 3 more classes inherited in a single line downwards
+	A
+	|
+	B
+	|
+	C
+	|
+	D
+
+4. Multipath inh
+- There is one base class which inherit into 2 or more classes, which futher inherit into one or more classes.
+
+	    	A
+		    |
+   ------------
+	B		        C
+	|		        |
+	-------------
+		    |
+		    D
+
+- In java the base class is always one and hence it supports either "simple inh or multilevel inh" in whcih there is only one base class.
+
+1. Simple or single inh.
+
+- This inh. has only one super class or base class and one or more sub classes or derived classes.
+
+- It shows one to one relation and one to many relation between base and derived classes.
+
+
+              A
+              |
+              |
+  --------------------------
+  |           |            | 
+  B           C            D
+
+            
+            A
+            |
+            |
+            B
+
+- The data in the super class must be declared using protected access modifier. The protected AM makes the base class data accessible in the derived class also.
+
+- The data in the derived can be declared by private access modifier.
+
+- The derived class is declared from the base class using extends keyword.
+
+- Finally the object should ideally be created and instantiated on the derived class or sub class.
+
+- The functions in the inheritance are CALLed from derived to base class and executed from base to derived class.
+- The object is created from the derived class.
+
+2. Super keyword in inheritance
+
+- super keyword is used in the derived class function to CALL the base class function when the names of functions in the base and derived classes are same which is very ideal situation.
+
+- The super keyword may not be used when the function names in the base and derived class are different.
+
+3. Constructors -
+
+- Contsructors can be written in the base class or super class and the derived or sub class.
+
+- The constructors can be default and parameterised constructors.
+
+- Again the rule is same the derived class constructor CALLs the base class constructors and base constructor executes first and then the derived class constructor executes.
+
+- The functions and constructors both are CALLed from derived to base and executed from base to derived.
+
+- Again super() keyword is used to CALL the base class constructor from the derived class constructor.
+
+- Default const. of derived class CALLs the default const of base class and same with parameterised const.
+
+
+2. Multilevel inheritance
+
+- This inh. has at least or minimun 3 classes inherited in a straight line downward or one after another in a single thread.
+
+class A                    Super Base Class
+{
+  protected ...
+}
+class B extends A          Derived/base intermediate class
+{
+  protected ...
+}
+class C extends B          Derived/base
+{
+  protected ...
+}
+class D extends C          Last derived class
+{
+  private ....
+}
+
+- There can be more than three classes and any number of classes in a straight line or single thread inhetinace.
+
+- The data should be declared protected in all classes except the last derived class.
+
+- And the the data in the last class can be declared as private.
+
+- Finally the objects are created from last class.
+
+- The constructors and functions are CALLed from derived to base and executed from base to derived class
+
+- The multilevel is an extension of single or simple inheritance.
+
+- Execution of function and constructors are exactly same as the single or simple inheritance.
+
+ex.
+class Employee
+{
+     protected ....
+     public void getData()
+     {
+     }	
+}
+class Salary extends Employee
+{
+     protected ....
+     public void getData()
+     {
+           super.getData();
+           .....
+      }	
+}
+class NetSalary extends Salary
+{
+     private ....
+     public void getData()
+     {
+        super.getData();
+        ....
+     }
+}
+NetSalary n = new NetSalary();
+n.getData();
+
+
+4. abstract, final and public classes
+
+1. abstract class
+
+- The abstract classes play very important role in creating inheritance
+- The abtract class is generally the super class declared using abstract keyword
+
+Rules of abstract class
+
+- The abstract class must be inherited into at least one sub class
+- The  object of an abstract can never be instantiated.
+
+ex.
+
+abstract class Student
+{
+
+}
+
+final class Result extends Student
+{
+
+
+}
+
+Result r = new Result() --- Correct
+Student s = new Student() --- Error
+
+
+2. final class
+
+- The final class is the last class in the inehritance declared using final keyword
+
+Rules of final class
+
+- The objects of the final class can be created and instantiated
+- The final class can not be further inherited or it can not create sub classes.
+
+
+
+3. public class
+
+- A class may be declared as public using public keyword.
+- The public class can be used in any other java program stored in a separate file.
+- This concept brings modularity to the java applications.
+- The public keyword makes a class public and accessible in any other java program.
+- In an inheritance of classes the public class must be only one.
+
+
+Creating a package in java
+
+- A package is a collection of classes (without main function)
+
+- There are 2 types of java packages
+
+1. Predefined or built-in java packages or API packages. (Application Programming Interface or libraries). These packages are instaled in JDK
+- There are over 200 packges in modern version of java
+- There are 6 base package used commonly.
+
+    java.util, java.io,     java.net, 
+    java.lang, java.applet, java.awt.
+
+- There are many packages that begin with javax (extended)
+
+   javax.swing, javax.servlet, javax.jersey, javax.logging
+
+
+
+These are commonly used java packages.
+
+12. User created package
+    These packages are created by the user. Once created they can be used in any java program by using import statement.
+
+- A package is created using "package" keyword and the name of package, the package name is user defined.
+
+- The package statement must be written in the beginning of program.
+
+- After compiling the program having package, a new folder is created by the name of package and the class file is generated into the folder.
+
+- The package name shoud not begin with java it is used as internal name for java packages.
+
+- A new java program can be created using import statement and the name of package to access the classes in the package.
+
+javac -d . classname.java
+
+
+Introduction to JAR
+
+- JAR (Java ARchive) is a package file used to collect many Java class files, associated metadata and resources (text files, images) into one compressed file.
+
+- A JAR file is a compressed file used to distribute java applications or java library.
+
+- JAR files are also used to distribute libraries for the Java platform.
+
+- They are built on the ZIP file format (.zip) and have the .jar file extension.  
+
+- A JAR file can be created using jar utility that comes with any JDK version. 
+
+- JAR is a basic build and deployment tool.
+
+- A JAR file may optionally contain a "manifest file" with .mf extension
+
+- The manifest file is not compulsory but it may conatin the class name to open.
+
+Creating Jar file without manifest file
+
+                            .jar file      .class file
+m:\new adv java\>jar -cvf HelloWorld.jar HelloWorld.class 
+
+c - Create new jar
+v - Verbose list of file
+f - File name of the jar file
+
+Creating Jar file with manifest ( ideal )
+
+- A manifest file can be created using any editor like notepad ro sublime
+
+- The manifest decribes the jar file and contains the mainclass or the "entry point of application".
+
+- Main properties of manifest file are
+
+Main-Class: HelloWorld
+
+m:\new adv java\>jar -cvfm HelloWord.jar HelloWorld.mf HelloWorld.class
+
+Creating excutable jar file
+
+jar -cvfe HelloWorld.jar HelloWorld HelloWorld.class
+
+run the jar file using command
+
+java -jar HelloWorld.jar
+
+Viewing the contents of jar file
+
+jar -tvf HelloWorld.jar
+
+- Table of contents
+
+extracting contents in a jar file
+- eXtract the contents of jar
+
+jar -xvf HelloWorld.jar
+
+Creating jar file from Eclipse
+
+- Select Project for which you want to create jar file.
+- Go to File Menu and select Export
+- Expand Java folder and select JAR file
+
+3. Polymorphism
+
+- The 3rd important concept of OOPS is polymorphism.
+- The polym gives a very dynamic aspect to a java application.
+- The polym word is made of two words "poly"  and "morph" means many forms
+- The plym. refers to defining many functions with same name but different behaviour "during runtime".
+
+- In other words when a function behaves differenltly in different runtime situation it is said to be a polymorphic function.
+
+- This kind of approach provides a dynamic appearance to a program.
+
+- There are 2 types polym
+
+1. Static polym	           2. Dynamic polym
+
+1. Static polym (*****)
+
+- The static polym is also called as "Compile time polym" or also called Early binding, compile time binding and static binding. Fixed binding.
+
+- The example of of static polym is overloading like "function overloading and constructor overloading".
+
+- The binding is a process of associating a function named with an object using a dot operator. ex. 
+
+s1.getData(). where s1 object and getData() function.
+
+- The static binding happens during program compilation.
+
+- The example of static polym. are all types of "Overloading" 
+
+
+1. function and operator overloading
+
+
+Compilation      and execution/runtime 
+
+s1.getData()
+
+2. Dynamic polym
+
+- The dynamic polym is also called as Runtime polym or also called Late binding, run time binding and dynamic binding.
+
+- The example of  dynamic polym is overriding like "function overriding".
+
+- The binding is a process of associating a function with an object using a dot operator.
+
+- The dynamic binding happens during program runtime or execution time.
+
+- It is not known at the compilation time, which object would call what function. It is confired during runtime.
+
+- In dynamic polymorphism the functions have same name in the base class as well as the derived.
+
+Function Overriding
+
+- The function overriding is also a feature of inheritance like simple and multi level.
+
+- In dyn polym or function overriding, the object is created from the base class and control of function flows from the base class to the derived. 
+
+- This is exactly opposite of the normal inheritance where the object is created form derived class and control of function call and constructor class goes from derived to base and execute from base to derived.
+
+
+- Although the object is created from the base class it is never instantiated on the base but the object is instantiated on the derived class or any one of the derived class.
+
+- Finally the functions of the derived class are executed.
+
+ex.
+
+class student
+{
+    public void setdata()
+    {
+    }
+    public void putdata()
+    {
+    }
+}
+class engg extends student
+{
+    public void setdata()
+    {
+    }
+    public void putdata()
+    {
+    }
+}
+class medical extends student
+{
+    public void setdata()
+    {
+    }
+    public void putdata()
+    {
+    }
+}
+
+----
+----
+student s1; // declare
+
+s1 = new engg(); // instantiate 
+s1.setdata(); ??
+s1.putdata();
+
+s1 = new medical();
+s1.setdata();
+s1.putdata();
+
+- The overridden function in the derived exetnds the functionality of the base class. That means the statements of the function in the base class are repeated in the derived class and the derived class contains its own statements or functionality.
+
+- This feature called Extending functionality.
+
+
+4. Abstraction
+
+- In the case of polymorphism, the object is created from the base class but the object never instantiates the base class instead it can intsnatiate any derived class and this brings dynamic polymorphism.
+-
+- The function control starts from the base but it executes the functions of the derived class which is instantiated.
+
+- For the "sake of presence" or the names base class must have all the functions which are having same name as in derived  class.
+
+- The base class function never execute and they can be declared without function body or statements using abstract keyword.
+
+ex.
+
+public  abstract void getdata();
+public  abstract void setdata();
+public  abstract void putdata();
+
+- A class that contains abstract functions must also be declared as abstract with abstract keyword.
+
+Interfaces in Java
+
+- An interface is like a class but is different than class
+
+- "An interface is sometimes more powerful, effecient and dynamic than class".
+
+- An interface can never replace classes.Both are equally important.
+
+- interface is a declaration that looks like a class
+
+- the interface is declared using interface keyword instead of class keyword
+
+- the interface may contain "data members and member functions like a class". But generally an interface contains ony the member functions.
+
+- the "data members in an interface is final" i.e. declared with contstant values that never change.
+
+- the "member functions of an interface are abstract"  i.e. declared only as names without statements or function bodies or they are "signatures". which may or may not have access modifier like public
+
+- The member functions in the interface are by default abstract and need not be declared as abstract and data members final.
+
+- Mostly the intrefaces have only function signatures of abstract function.
+ex.
+
+interface Extra
+{
+    final int sp = 5;
+    final int bd = 20;
+    
+    public void printExtra();
+    public void setExtra();
+    public void getExtra();
+}
+
+abstract class Student
+{
+    public  abstract void getdata();
+    public  abstract void setdata();
+    public  abstract void putdata();
+}
+
+- An interface implements into a class like a super class extends into a sub class using implements keyword
+
+ex.
+
+class Result implements Extra
+{
+ ----- 
+ -----
+    
+    public void setExtra()
+    {
+
+    }
+    public void getExtra()
+    {
+
+    }
+}
+
+- All functions of an interface are implemented or defined or written into the class.
+
+- The interface never has a constructor.
+
+- The object of an interface can not be instantiated with new operator whereas object of a class can be instantiated.
+
+- With interface a multiple inheritance can be created.
+
+class A
+{
+  
+}
+
+interface B
+{
+  
+}
+interface X
+{
+  
+}
+
+interface Y
+{
+  
+}
+
+class C extends A implements B, X, Y
+{
+  
+}
+
+1. A super class extends into a sub class
+
+class A
+{
+
+}
+class B extends A
+{
+
+}
+
+2. An interface implements into a class
+
+
+interface A
+{
+
+}
+class B implements A
+{
+
+}
+
+3. A super interface extends into sub interface
+
+interface A
+{
+
+}
+interface B extends A
+{
+
+}
+
+class C implements B
+{
+
+}
+
+interface Mouse
+{
+  public void mouseClick();
+  public void mouseMove();
+  public void mouseDrag();
+  public void mouseScroll();
+  public void mouseDblClick();
+  public void mouseRgtClick();
+}
+
+class Game implements Mouse 
+{
+}
+
+class Notepad implements Mouse
+{
+}
+
+class Paint implements Mouse
+{
+}
+
+==================== Part 3 Starts ==================
+
+GUI Programming with Java
+
+Introduction to windows programming or GUI programming
+
+- Java supports 3 types application
+
+1. Console Application - black and white screen
+2. Windows Application - runs on windows and has all windows features (GUI)
+3. Web Application - runs on the browser and is an internet application
+
+- GUI based application is a program that runs on windows operating system
+
+- The GUI program has all the features of windows OS like mouse activity, cursor, bitmaps, images, various fonts, colors or graphics and large, menus, dialog boxes, scroll bars and number user interface components or controls.
+
+- The use of all the above makes a windows application or GUI application.
+
+- The Windows applications runs on "events" there fore it is also called "Event driven programming" or Event Based Programming.
+
+- There are 2 types of events
+
+1. Hardware events - Events caused by HW or Mouse or keyboard activity called Windows Application
+2. Software events - Automatic activities that happen on computer without kb and mouse like scanning pendrive by antivirus, such programs are called Windows Services.
+
+- Java has powerful facility to develop the windows application or windows program and windows service.
+
+- There are 2 methods of developing a windows application in java 
+
+1. AWT   -- Abstract Window Toolkit (Older method)
+2. Swing -- Modern Method for windows application developmen
+
+
+- AWT is an old and very popular method for development of windows applications in java.
+
+- The swing is more modern and "graphically more rich" GUI application development methods.
+
+1. Abstract Window Toolkit
+
+- The AWT provides a very large collection of classes and interfaces which come from java.awt package.
+
+- These classes and interfaces can be used in the java program to develop windows based application.
+
+- The most commonly used classes are the control classes or 
+UI (user Interface) classes.
+
+- These classes are used to develop user interface screens or data entry forms.
+
+- The list of AWT classes for UI controls is as follows...
+
+1. Frame   -- this class is used to create the main frame of the application, It has maximize, minimize and close button. Every windows application has a Frame. The frame holds the "container" which can be a Panel or Canvas. Every windows application has a single frame .
+
+2. Panel    --  The working area inside frame is called as Panel. The panel is used to add the user inerface controls. The panel fits into the frame.
+
+3. Label    --   The label is a control that displays static text. The label is only for display purpose.
+
+4. TextField  -- The control to add data or type data in a single line. it can be used to enter any type of data but considered as string data.
+
+ 6. Button      --   This class creates a button for the data entry form. It is also called as command button which can clicked to complete the activity like of a form ok, cancel, submit button.
+
+5. TextArea  --  The control which  has lines and columns and data can be entered in many lines. It is useful to enter text that goes into more than one lines.
+
+7. List          -- It Displays a list of items from which one item can be selected or many items can be selected. It is a selection control.
+
+8. Choice   -- It is a selection control which  has a dropdown button.
+
+9. Checkbox -- It is a square shaped selection control which can be checked or unchecked i.e. selected or unselected.
+
+10. CheckboxGroup -- used to create radio button which is circular in shape and only one can be selected at a time.
+
+- The above control or classes are commonly used in a GUI program
+- There are some advanced control or classes.
+
+1. MenuBar  -- It is the horizontal bar on which menus are created
+2. Menu -- Each text on the menubar is called Menu
+3. MenuItem -- The submenu items under each menu is called MenuItem
+4. ToolBar  -- It is below the menubar and it contains command buttons or toobar buttons.
+5. StatusBar  -- it is at the bottom of the screen and it shows the different information about the application like line no, column number etc. 
+6. ProgressBar -- it show the progress of an activity like copiying files from one drive to another drive or installation process.
+7. ScrollBar -- The scroll is very common in many application. It is used scroll or move the contents of an application. There are two scroll bar vertical and horizontal. 
+8. Slider -- It is movement control which moves by the mouse. There can be a vertical slider or horizontal slider. Example of a slider can be sound volume control of windows OS.
+9. Dialog -- It is a small window that may contains some UI controls.
+
+
+1. Creating a windows program using AWT.
+
+2. Swing components
+
+- The swing is more modern and graphically rich system for developing GUI application
+- It is more popular than AWT now a days
+- All swing classes and interfaces come from javax.swing package.
+
+- Almost all classes of AWT are available in swing in addition there are some new classes and  controls in swing.
+
+- All swing classes begin with letter J 
+
+1. JFrame   -- this class is used to create the main frame of the application, It has maximize, minimize and close button.                     every windows application has  a single frame .
+2. JPanel    --  The wodking area inside frame is called as Panel
+3. JLabel    --   The label is a control taht displays static text. The label is only for display purpose
+4. JTextField  -- The control to add data or type data in a single line
+5. JTextArea  --  The control which lines and columns and data can be entered in many lines.
+6.  JButton      --   The command button which can clicked to complete the activity like ok, cancel button.
+
+7. JListBox (List in awt)     -- Displays a list of items from which one item can be selected.
+8. JComboBox (Choice in awt)  -- Like a list box but it has a dropdown button.
+9. JCheckBox -- It is a square shaped selection control which can be checked or unchecked.
+10.JRadioButton (CheckboxGroup)
+11.JPasswordField --  To enter password.
+
+- The above control or classes are commonly used in a program
+- There are some advanced control or classes.
+
+1. JMenuBar  -- It is the horizontal bar on which menus are created
+2. JMenu -- Each text on the menubar is called Menu
+3. JMenuItem -- The submenu items under each menu is called MenuItem
+4. JToolBar
+5. JStatusBar
+6. JProgressBar
+7. JScrollBar
+8. JSlider
+9. JDialog
+
+10. JOptionPane (***)
+11. JTabbedPane (***)
+12. JTable
+13. JTree
+
+BioData in AWT
+
+Name  - TextField
+Addr  - TextField
+Age   - TextField
+city  - List
+State - Choice
+Gender - CheckboxGroup
+Qual  - Checkbox
+Ok, Cancel - Button
+
+
+Layout Managers in Java 
+
+- A layout is a systematic arrangement of controls on the panel or a container.
+
+- The layout decides the locations and positions of controls or components on the panel.
+
+- The layout is managed by a special class called "Layout manager"
+
+- There are 6 layout manager classes in awt package.
+
+- The default layout manager is called FlowLayout which is already present on a panel.
+
+- This layout puts the control one after another, from left to right and on the next row when the right margin comes.
+
+- All layout classes come from java.awt package.
+
+1. FlowLayout  (Default layout)
+2. BorderLayout
+3. GridLayout
+
+4. CardLayout
+5. GridBagLayout
+6. BoxLayout
+
+
+2. BorderLayout
+
+- The BorderLayout is a simple layout and it is used to add controls on the panel on 5 directions
+
+- The direction on which the controls are added are North, South, East, West and Center
+
+- This layout manager is useful for developing applications like games in Java. or adding some components on 5 directions.
+
+- The object of the BorderLayout is instantaitated with an empty constructor.
+
+- A setLayout() function is used to set the new layout on the panel.
+
+- All layout manager classes come from java.awt package.
+
+ex.
+
+BorderLayout bl;
+bl = new BorderLayout();
+Panel pan = new Panel();
+pan.setLayout(bl);
+
+- The controls can be added on 5 direction using add() function.
+- The borderlayout is useful in windows application for adding menubars, tool bars (North), scoll bars(East and south) etc.
+- All or some of the directions may be used in a program depending upon need.
+
+
+3. GridLayout
+
+- This layout is also very popular in developing board games and matrix applications.
+
+- In the layout the controls are added on a grid of rows and columns like a matrix.
+
+- There are fixed number of rows and columns on which the controls are added.
+
+- The object of GridLayout class passes 2 contructors parameters i.e. and number of rows and columns.
+
+ex.
+
+GridLayout gl = new GridLayout(3,3);
+pan.setLayout(gl);
+
+- The setLayout() function is used to set the new gridlayout and remove defauly layout.
+
+4. CardLayout
+
+- The CardLayout is an old layout manager which has now become outdated and now very rarely used.
+
+- The CardLayout is now replaced by a special swing class called JTabbedPane.
+
+- There are some limitations of this layout and hence became outdated.
+
+- In a card layout there are multiple  panels or many panels each having a set of different controls.
+
+- These panels are placed on the cardlayout like horizotnal stack.
+
+- Only one panel is visible at a time and other panels are hidden behind the visible panel.
+
+- The JTabbedPane has implementation of CardLayout each card having a named tab or tab with a name by which a user can access the panel.
+
+JTabbedPane class
+
+- It is new class of swing package.
+- It is a replacement of CardLayout
+- The object of JTabbedPane is created with a default constructor.
+- The addTab() function is used to add the panels on the control.
+- This function passes 2 parameter
+
+1. Title of the Tab
+2. the object of panel.
+
+- Finally add the JTabbedPane object on the frame.
+
+ex.
+
+CardLayout cl = new CardLayout();
+pan.setLayout(cl);
+
+5. BoxLayout (layout of layouts) ******
+
+- The BoxLayout is used to combine two or more layout in one application 
+
+- It is a combination of two or more layouts
+
+- It is a mixed layout of many layouts for ex. A FlowLayout and GridLayout or GridLayout and BorderLayout.
+
+- It is a layout of layouts.
+
+- It is required in some specific application. *****
+
+6. GridBagLayout
+
+- This was a popular layout to add controls on the panel and create a neat and systematic "data entry forms".
+
+- It is used to add controls at given location on the panel.
+
+- The GridBagLayout always works with another important class called GridBagConstraints.
+
+- The GridBagConstraints is more important than the layout class.
+
+- This class sets the rules and locations to add the controls on the panel.
+
+
+ex.
+
+GridBagLayout gb = new GridBagLayout();
+GridBagConstraints gc = new GridBagConstraints();
+
+pan.setLayout(gb);
+
+- The GridBagConstraints has three important properties
+
+1. anchor -- it is used to set direction for adding control on the panel. There are 8 directions on which the controls (label, textfield, button) can be added on the panel.
+
+GridBagConstraints.NORTH
+GridBagConstraints.SOUTH
+GridBagConstraints.WEST
+GridBagConstraints.EAST
+GridBagConstraints.NORTHWEST ****
+GridBagConstraints.NORTHEAST
+GridBagConstraints.SOUTHWEST
+GridBagConstraints.SOUTHEAST
+
+- The most common and popular anchor is NORTHWEST to start the controls on the panel.
+
+2. gridx -- it is used to set the x location of the control on the panel  (x co-ordinate)
+
+3. gridy -- is used to set the y location of the control on the the panel. (y co-ordinate)
+
+- This layout requires a lengthy java program to implement.
+
+- The controls shift their positions when the frame size is changed.
+
+- This layout is also not very effecient and it is replaced by setBounds() function.
+
+setBounds()
+
+- The setBounds() function is an altrenative to GridBagLayout and much more easier and effecient than the layout.
+- It reduces the program length also
+- Using setBounds() the controls can be properly placed on the panel and they do not shift even the panel is resized.
+- Hence the professional and good looking data forms can be created using setBounds()
+
+- For using the setBounds() function a panel should be 
+"free of layout" i.e. panel must not have any layout. Panel should blank or without layout
+
+ex.
+pan.setLayout(null);
+
+- The setBounds() function passes 4 parameters
+1. x location
+2. y location 
+3. width of control
+4. height of control
+
+ex.
+                 x  y  w  h 
+lname.setBounds(10,10,50,20); pan.add(lname);
+tname.setBounds(70,10,100,20); pan.add(tname);
+
+lname.setBounds(10,60,50,20); pan.add(lname);
+tname.setBounds(70,60,100,20); pan.add(tname);
+
+9. Event Handling in Java
+
+- The event handling is a very important concept in windows or GUI programming.
+- A windows program can not be completed without event handling.
+- An event is an activity or action that happens during program execution.
+- The event can be a Button click, Mouse click, double click, right click, mouse move, mouse drag.
+- The event is typical and important feature of windows programming or windows application.
+
+- An windows applications run on various events (DOS based or console program does not have event based execution.)
+
+- Differences between console (B/W) and windows program
+
+Console Program                          Windows Program
+
+1. Runs in command prompt (B/W)          Runs on windows
+2. Black and white interface (CUI)       Graphical User Interface
+   Character User Interface
+3. Runs in linear fashion                Does not run in linear fashion.
+   from top to bottom.
+4. Automatically ends when program is    Does not automatically end or exit complete.
+5. Non event based programming           Event based programming
+
+
+- The events are generated by either mouse activity or key board activity.
+
+- Based on the event generated, the programs responds by executing a special function called "Event Handler" function
+
+- Java supports different types of events through a collection of "classes and interfaces" which come from java.awt.event package.
+
+- There are many events depending upon scope and activity
+
+- The most common events that are handled by java are...
+
+1. ActionEvent	  2. MouseEvent	         3. WindowEvent	
+4. KeyEvent	      5. ComponentEvent      6. AdjustmentEvent
+
+1. ActionEvent
+
+- The ActionEvent is one of most common and popular event handling used in java programs
+
+- This event occurs by pressing the buttons like ok, cancel buttons, also by selecting menu items, by executing toolbar buttons etc.
+ 
+  Button, Menus, Toolbars ---
+
+- Every event (6 types) is supported by one class and one interface.
+
+- The action events are supported by "ActionEvent" class, "ActionListener" interface and an "actionPerformed()" function.
+
+- The listener is always an interface.
+
+- An additional function addActionListener() is also used to register the event on the buttons.
+
+ActionEvent - class
+ActionListener - interface
+
+actionPerformed()
+addActionListener() - 
+getSource() - functions
+
+
+- All event classes and interfaces come from java.awt.event package.
+
+Steps to use action event in a java program
+
+1. import java.awt.event package
+2. The main java class should implement ActionListener interface which makes the program listen to event.
+3. The button should register the event by using addActionListener() function for current application. This function makes the buuton active and capable of responding to events.
+4. implement the actionPerformed() function which passes the object of ActionEvent class. The object of ActionEvent class contains the control or button which is clicked by the user. A getSource() function is used to recongnize the name of the control or the button.
+
+Biodata Form (AWT)
+
+1. Name -- textfield
+2. Addr -- textfield
+3. city  -- list
+4. state -- choice
+5. Qual  -- checkbox
+6. Gender -- checkboxgroup
+7. ok, cancel -- button
+
+Create the Biodate using setBounds() function and event handling.
+
+2. MouseEvent
+
+- The second popular and commonly used event is MouseEvent.
+
+- It is used to handle any mouse activity in applications like paint brush and other drawing programs, games etc.
+
+- The mouse events take place on any mouse activity like mouse move, mouse drag, mouse click, mouse pressed, mouse released etc.
+
+- The mouse events can be used in a program by 
+"one class and two interfaces".
+
+- The name of class is MouseEvent and the interfaces are MouseListener and MouseMotionListener
+
+- The MouseListener interface has 5 functions and the MouseMotionListener has 2 functions.
+
+1. MouseEvent -- class
+
+2. MouseListener
+3. MouseMotionListener -- interfaces
+
+Functions of MouseListener (5)
+
+1. mouseEntered()  
+2. mouseExited()
+3. mousePressed()
+4. mouseReleased()
+5. mouseClicked()
+
+1. mouseEntered() -- this event occurs when the mouse enters the work area of an application or the panel of an application.
+
+2. mouseExited() -- this event occurs when the mouse exits from the work area of an application or the panel of an application.
+
+3. mousePressed() -- this event occurs when the left mouse or right button is pressed and keep it pressed
+
+4. mouseReleased() -- this event occurs when the left mouse or right button is released.
+
+5. mouseClicked() -- this event occurs when the left mouse or right button is pressed and released fast.
+
+Functions of MouseMotionListener (2)
+
+1. mouseMoved()  -- this event occurs when the mouse is moved on the panel without pressing a mouse button.
+
+2. mouseDragged()  -- this event occurs when the mouse is moved on the panel by pressing a mouse button.
+
+- besides these 7 functions which come from two interface, other important functions are getX() and getY()
+
+- The getX() function reads the x location of the mouse pointer on the screen and getY() reads the y location on screen.
+
+- Finally the panel must be active and capable of listening to mouse event for which two functions are used in the program
+
+pan.addMouseListener()
+pan.addMouseMotionListener()
+
+3. Key events
+
+- The key event occurs when user presses any key on the keyboard
+
+- The key events are very useful in many java applications where keys like arrow keys, pg up, pg dn, home, end and function keys need to be used.
+
+- Other special keys can be function keys f1 to f12 and control, alt, shift etc.
+
+- The key event is handled by one class and one interface
+
+1. KeyEvent     class
+2. KeyListener  interface
+
+- There are three important functions in the KeyListener interface which can be implemented in the program
+
+1. KeyPressed  	--- This event occurs when a key on keyboard is pressed
+2. KeyReleased	--- This event occurs when key is released
+3. KeyTyped	    --- This event occurs when the key is pressed and released at once.
+
+
+4. addKeyListener() --- this function is used to register a control for listening key events.
+
+5. getKeyChar()     --- returns the actual character or key value pressed by the user.
+
+5. Window Events
+
+- The window event occurs when the main frame or frame class is modified or activated.
+
+- The window events are handled by one class and one interface
+
+1. WindowEvent class
+2. WindowListener interface
+
+There are 8 functions used to handle window events are
+
+1. windowOpened()   --- when the window is opened
+
+2. windowClosed()   --- when the window is closed
+
+3. windowClosing()    --- when the process of window closing begins
+
+4. windowsMaximized() --- when the window is maximized
+
+5. windowIconified()    --- when the window is minimized
+
+6. windowDeiconified()  --- when the window is restored
+
+7. windowDeactivated()  --- when the mouse is clicked outside window
+
+8. windowActivated()    --- when the mouse is clicked inside window
+
+
+- Finally the frame object should be registered and made active to listen to window events by addWindowListener() function.
+
+- All window event are active by default except windowClosing event.
+
+
+16. Multithreading in Java (*****)
+
+Introduction to Multithreading
+
+- There are 2 types of operating system
+
+1. Single tasking operating system	
+2. Multitasking OS
+
+- A single tasking OS can perform only one task or one application or one job at a time. like word etc
+
+- Unless a task or application is finished or closed it can not start another application.
+
+- The example of Single tasking OS is MS DOS (microsoft disk operating system)
+
+- It was used on the PC before windows OS was developed.
+- It was during 80's to early 90's (1981 to 1992)
+
+- The multitasking OS allows more than one tasks or applications run simulteniously. 
+
+- All the applications run in their own memory space and have their own activities to perform.
+
+- The OS allocates separate memory space to run each application. like if in windows there three application running word, browser and music player, they all run simulteniouly in their own private memory space.
+
+- A user can switch between the running applications by using ALT-TAB
+
+- Example of multitasking OS is Windows OS and all modern OS.
+
+- A thread is a path of execution or a smallest unit of program that is being executed in the memory of the current application.
+
+- Every application has at least one thread which is called "main thread" or "primary thread" or "application thread".
+
+- the main thread is created by the main() function in the program.
+
+- The application that has only one thread or main thread is called "single threaded application" or program.
+
+- Besides the main thread many other threads can be created in a program and each thread performs some function or activity.
+
+- Such program which has many threads that exceute almost simulteniously is called "Multi Threaded program".
+
+- These threads are called "Secondary threads" or "worker threads" or "background thread".
+
+- Each thread has a life cycle including main thread.
+
+- Every thread takes birth, starts executing and performs the activity and when activity is finished the thread automatically gets destroyed or died.
+
+- The applications of multithreading are computer games, animation programs, almost all internet web sites, downloading applications, torrents, and all windows applications  etc.
+
+- The MT is very important feature of Java and it supports full scale multithreading.
+
+- The MT is implemented in a program by using a class and an interface both of them come from "java.util" package.
+
+1. Thread   class
+2. Runnable interface
+
+Thread life cycle 
+
+- A thread is controlled by several functions in a program all these functions belong to Thread class.
+
+1. init()      2. start()	       3. run() **    4. sleep()	
+5. stop()      6. suspend ()     7. resume()    8. destroy()
+
+1. init()
+
+- This function performs initailization of a thread by creating variables and assiging values.
+
+- This function is automatically executed and need not be written in a program. "It is not a compulsory function".
+
+2. start()
+
+- This function starts executing a thread and it interanlly CALLs run() function. This function must be CALLed in a progarm.
+
+3. run()
+
+- It is called by start() function and it may contain the statements to be executed in the thraed.
+
+- It is the main thread function which containts statemnents for the current thread.
+
+- All thread activity statements can be written in run() function.
+
+- It is the most importnat and must be implemented in the program.
+
+4. stop() 
+
+- it stops the execution of thread for some time which can be restarted by start() function.
+
+- But the activity starts from begining
+
+5. suspend() and resume()
+
+- The suspend() function also stops a running thread and it is continues by resume() function.
+
+- The thread resumes from the point where it was suspended.
+
+7. sleep()
+
+- This function also stops a running thread for given period of time in milliseconds.
+
+- A soon as the  time is over it again starts executing.
+
+Thread.sleep(1000);  -- sleep for 1000 milisec or 1 sec. 
+
+8. destroy()
+
+- It is also automatically CALLed by the system at the end of program or thread acitivity gets completed.
+
+- It destroys the exceuting thread.
+
+- It need not be written in program.
+
+- The most important function used in multithreading program are
+
+- the init() and destroy() function are very rarely used in a program. They are default function. 
+
+1. start()         2. run()        3. sleep()   
+--- commonly used fucntions
+
+4. suspend()       5. resume().
+--- rarely used
+
+a. Program to control main() thread. 
+(not a multi threaded program).
+
+There are important function in Thread class
+
+1. currentThread() --- to get the currently executing thread.
+
+ex.
+Thread mthread = Thread.currentThread(); 
+
+-- to get the access of main() thread.
+
+2. setName()  --- To give a name to thread .
+
+ex.
+mthread.setName("Main Thread");
+
+
+b. Multithreaded Java program
+[ Running more than one threads each executing a for loop ]
+
+
+- Create and instantiate the object Thread class
+- The class should implement Runnable interface.
+- Three functions used in the class 1. start()  2. run()  3. sleep().
+
+1. Text Animation using Multithreading
+2. Graphics Animation in Java
+
+[ After some time ]
+
+Exception Handling in Java
+
+a. Introduction to EH or Structured Exception Handling (SEH)
+
+- There are 3 types of errors that can occur during a 
+"program development life cycle" in java.
+
+1. Syntax Error    
+2. Linking or Library Error     
+3. Runtime error
+
+1. Syntax Error
+
+- This error is very common in java program and it occurs during compilation of a program using javac compiler.
+
+- The syntax error occurs due to incorrect or imprpoper syntax in the program like misspelled keywords, missing metacharacters like ; , { }, using variables without declarations etc.
+
+- The syntax errors can be easily removed and they in user's control.
+
+- All syntax errors are program errors and the program runs only if all errors are removed.
+
+2. Linking or Library Error
+
+- These errors occur if the java runtime library files are missing or damaged or corrupted. (JRE files)
+
+- The linking errors can also be removed by reinstalling jdk.
+
+- All java runtime library files are present in the java installation folder in C drive Program Files.
+
+- The library errors are also in control of the user and can be removed by reisntalling java software or JDK.
+
+3. Runtime error
+
+- Even if all syntax errors are removed and library files are intact or properly installed, the runtime errors may occur.
+
+- The runtime errors occur during the execution or program runtime.
+
+- The runtime errors are also called as "Exceptions".
+
+- The runtime errors occur due to many reasons like reading file from disk which is not present, the array is being processed beyond its size, the obejcts are used in the program without instantiation, accepting a string or non numeric value for numeric input and there are hundreds situations where expetions occur. 
+
+- The runtime errors or exceptions are 
+"not in the users' control" and a user can not handle the exceptions because the program is in execution.
+
+- The exceptions are sometimes very dangerous and fatal and they cause serious trouble to the system, by putting the system into hang and computer stops working and may also damage important files in the computer or may damage operating system.
+
+- The "exception handling" is a mechanism to handle exception and display some proper error message and close the program, if a run time error occurs. The system should not be put into unstable state or in a trouble. The control should return safely back to computer.
+
+- "The EH is always performed by the program itself during runtime".
+
+- The exception handling can be used in a program by adding some additional statements in the program to check the exceptions and stop the program if exception occurs.
+
+- EH is like prevetive medicine.
+
+- There are three statements using to handle the exception properly
+
+1. try  
+2. catch  
+3. finally   
+4. throws
+
+- The try block is used to write statements that may throw an exception.
+
+- The try block is also called as "Guarded Block" and it throws an exception if some statemnent has runtime error.
+
+- The exception is then received by a catch block
+
+- The catch block stores the exception into an Exception object and may display some error message
+
+- The finally block is not compulsory and may not be written.
+
+- The finally statement performs the activities on execption or without an exception.
+
+try // Guarded block
+{
+  ----
+  ----
+}
+catch(Exception e)
+{
+  e.printStackTrace(); // print compete error message
+  System.exit(0);
+}
+finally
+  {
+     ----
+    ----
+  }
+----
+----
+----
+
+- The finally statement is generally not written in the program.
+
+- There are many Exception classes which are specific to a particular type of activity or error.
+
+- All exception classes are derived from the base class called Exception.
+
+1. NullPointerException   
+2. NumberFormatException
+3. ArrayIndexOutOfBoundsException
+4. FileNotFoundException
+5. InterruptedException   *** Multithreading ( sleep() )
+6. ClassNotFoundException
+7. ArithmeticException
+8. IOException
+9. SqlException
+10.SocketException
+11.URLException
+and many more.
+
+1. NullPointerException   
+- It occurs when the object is not instantiated by new operator but directly used in the program.
+
+2. NumberFormatException
+- Occurs when the numeric input is not in proper form.
+
+3. ArrayIndexOutOfBoundsException
+- Array is processed beyond its size using a loop
+
+4. FileNotFoundException
+- When a file is opened in a program which is not present on the disk
+
+5. InterruptedException
+- Used in multithreading to interrupt a thread using sleep() method
+
+6. ClassNotFoundException
+- When a class is missing
+
+7. ArithmeticException
+- when any number or numeric data is tried to divide by 0
+
+8. IOException
+- when the IO device is not ready
+
+9. SqlException (***)
+- Occurs in accessing database
+
+10. SocketException (***)
+- Occurs in multi user and network program.
+
+11. URLException 
+- Occurs when the URL is wriitemn in incorrect format
+
+Exception handling programs
+
+1. Number format exception
+2. Arrayindex out of bounds exception ***
+3. Null pointer exception
+4. Artithmetic exception
+
+a. getMessage() is a standard and predefined function to print the error message.
+
+- The function belongs to Exception class.
+
+ex.
+e.getMessage();
+
+b. printStackTrace() 
+- this function prints detailed error or it prints error stack.
+
+ex.
+e.printStackTrace();
+
+- throws statement can be used at the end of the function or constructor to throw and catch exception whenever they are occured.
+- The use of throws statement does not need try ... catch block.
+
+- This statement if written, there is NO need try and catch.
+
+- If the specifig exception class is not known then the generic Exception class can be used to catch the exception.
+
+
+- In most situations the try...catch ois compulsory and it must be used or throws can used in place of try ... catch
+
+
+17.	Additional and advanced Features of AWT / Swing
+
+1. Menus
+
+- A menu system is a very imp. component of a GUI application.
+- All windows application have menus.
+- Any windows application is incomplete without menu.
+- Even a smallest windows program like calculator also has menu.
+- The menu is an easy interface for accessing the functions of program.
+- The menu system can be created by 2 methods 
+   1. AWT		2. Swing
+- There are 3 menu classes in both the methods
+
+    AWT          Swing
+1. MenuBar	   JMenuBar
+2. Menu		     JMenu
+3. MenuItem	   JMenuItem
+
+- The horizontal bar is the Menubar
+- Each item on menubar is Menu like File, Edit
+- Each sub-menu on menu may have several vertical MenuItems.
+
+ex.
+MenuBar mbar;
+Menu file, edit, help;
+MenuItem fopen, fnew, fexit;
+MenuItem ecut, ecopy, epaste;
+MenuItem hhelp, habout;
+
+mbar = new MenuBar();
+file = new Menu("File");
+edit = new Menu("Edit");
+help = new Menu("Help");
+
+mbar.add(file); mbar.add(edit); mbar.add(help);
+
+fopen = new MenuItem("Open");
+fnew = new MenuItem("New");
+fexit = new MenuItem("Exit");
+
+file.add(fopen); file.add(fnew); file.add(fexit);
+
+- Finally a setMenuBar() function is used to add menubar on the frame.
+
+fr.setMenuBar(mbar);
+
+- There are two important functions in menu system
+
+1. setMnemonic() -- to set the keyboard shortcut for the menuitem 
+2. setToolTipText() -- to display text about the menuitem.
+
+
+18. Java stream classes & Java IO
+
+a. Java Stream classes
+
+- A data stream is a flow of data that flows from a source location to target location.
+
+- The source location can be an input device or a memory  
+
+- The target location can be the memory stream or the outout device.
+
+- There are large number java stream classes and all of them come from java.io package.
+
+- There are main 2 types of data streams and the generic stream 
+(general) classes or neutral classes. They are not specific classes.
+
+1. InputStream	2. OutputStream (generic)
+
+1. InputStream is the data stream to read data  (reading stream)
+2. OutputStream is a data stream that sends data to an output device or write data to output device. (writing stream)
+
+- Depending I/O functionality and type of data streams there are large number classes which are derived from these 2 classes. These are specific classes.
+
+    Reading              Writing
+
+1. DataInputStream / DataOutputStream (**)
+2. FileInputStream / FileOutputStream  (**)
+
+3. BufferedInputStream / BufferedOutputStream
+4. PushBackInputStream / PushBackOutputStream
+5. PipedInputStream / PipedOutputStream
+6. FilteredInputStream / FilteredOutputStream
+7. ByteArrayInputStream / ByteArrayOutputStream
+
+- And there are many other IO classes like
+
+BufferedReader
+PrintStream
+
+1. DataInputStream / DataOutputStream
+
+- The DataInputStream is used to create an object to accept data from standard input device or keyword device.
+
+- The DataOutputStream is used to create the object to print data on the standard output device or monitor screen.
+
+- The DataInputStream class is generally used to read data from input device or keyboard. (*****)
+
+
+2. FileInputStream / FileOutputStream / RandomAccessFile
+
+- The FileInputStream reads data from the data-file stored on the hard disk.
+
+- The file must be already created and containing some data.
+
+- The FileOutputStream class is used to create an object for writing data into a disk file.
+
+- The RandomAccessFile is more powerful and effecient class which can perform the writing of data to a disk file as well as reading data from the disk.
+
+- The object of RandomAccessFile can be created by CALLing a constructor which passes 2 parameters
+
+1. Filename to create or read as a string data
+2. File opening mode.
+
+- File opening more "rw" performs both th operation file i.e. read and write.
+
+- All data file related program throws an IOException
+
+ex.
+
+RandonAccessFile rf;
+rf = new RandonAccessFile("d:\\mydata\\newfile.txt","rw");
+[ in windows ]
+rf = new RandonAccessFile("/home/meos/morning-java/newfile.txt","rw");
+[ in Linux ]
+
+- Write data into the file.
+- There are many functions to write data into file like
+
+1. writeBytes() --- this function writes the string data into the file.
+- A file can be closed using close() function.
+
+ex code
+
+RandonAccessFile rf;
+rf = new RandonAccessFile("e:\\mydata\\newfile.txt","rw");
+
+rf.writeBytes("hello and welcome to Java File Handling \n");
+rf.writeBytes("this is second line \n");
+rf.writeBytes("End of file");
+
+rf.close();
+
+- Read data from the file.
+- A readLine()  --- this function can be used to read one line at a time from the file.
+- This function also reads a string data.
+
+- The RandomAccessFile throws an exception called IOException while performing reading or writing operations.
+
+
+RandonAccessFile rf;
+rf = new RandonAccessFile("d:\\mydata\\newfile.txt","rw");
+
+String line;
+line = rf.readLine(); --- 1 line
+
+while(line!=null)
+{
+  
+  System.out.println(line);  1 2 3 4 
+  line = rf.readLine();
+}
+
+FileOutputStream 
+- The FileOutputStream class is an implementation of the file writing to the disk file.
+- It is derived from OutputStream class.
+- The object of this class can only write data on the disk file.
+- The constructor the the class passes the filename.
+
+ex.
+
+FileOutputStream fout;
+fout = new FileOutputStream("e:\\newfile.txt");
+
+- The write() function writes the data into the file.
+- The write() function of this class writes data as the byte array.
+- A byte array can be created using getBytes() function applied to a string data.
+
+FileInputStream class
+
+- This class is used only to read data from the disk file and it cannot write data.
+- The object of this class passes the file name as the constructor parameter.
+
+FileInputStream fin;
+fin = new FileInputStream("e:\\newfile.txt");
+
+- The read() function reads one byte from the file at a time which can be then converted to a char and then stored into data to display.
+
+- A simnple while loop can be used to read data from begining of the file to end of file.
+
+int i = 0;
+
+while ( (i=fin.read())!=-1 )
+{
+  System.out.((char)i);
+}
+
+
+JFileChooser class -- This class is used to show a file dialog box to select a file to read or write. This class contains two functions
+
+1. getSelectedFile() --- reads the selected file into File object and the getName() function returns the name of file.
+2. getName() --- reads the filename from the selected file.
+3. showDialog() --- shows the file chooser.
+
+ex.
+
+JFileChooser jf = new JFileChooser();
+jf.ShowDialog();
+String filename = jf.getSelectedFile().getName();
+
+
+19.	Java Library Classes
+
+	1. String / StringBuffer / StringTokenizer / Vector / Enumeration / Math -- Utility
+	2. Wrapper classes 
+  3. Collection API (*****)
+
+1. String class
+
+- The String class is one of the most popular and commonly used class in Java programs
+- String class is an implementation of "non-growable" collection of characters enclosed in double quotes.
+- A String object can be created by various methods.
+
+ex.
+
+String str = "Hello and welcome";
+String str = new String("Hello and welcome");
+String str = new String(); // empty string.
+
+- The string class contains large number of functions for processing the string.
+
+1. length()       2. equals()       3. equalsIgnoreCase()	  
+3. upperCase()    4. lowerCase()    5. indexOf()      
+6. lastIndexOf()  7. contains()     8. substring()   
+9. charAt()       10. concat()      
+11. trim()                                                       12. split()	    	
+
+1. length() - This function returns the length of a string in int.
+
+prototype :  int length();
+
+String str = "hello and welcome";
+int len = str.length();  [ len = 17 ]
+
+2. equals() - this function compares two strings and return true or false. It both string are same then returns true else it returns false.
+
+prototype :  boolean equals(String str2);
+
+String str = "hello and welcome";
+String str2 = "hello and WELCOME";
+boolean flag = str.equals(str2);
+
+if(flag==true)
+    System.out.println("The strings are same");
+else
+    System.out.println("The strings are not same");
+
+3. equalsIgnoreCase() - it compares two strings by ignoring cases i.e. small or capital letters. It only compares the spellings.
+
+String str = "hello and welcome";
+String str2 = "hello and WELCOME";
+boolean flag = str.equalsIgnoreCase(str2);
+
+if(flag==true)
+    System.out.println("The strings are same");
+else
+    System.out.println("The strings are not same");
+
+3. toUpperCase()   - it converts the string into upper case
+
+String str = "hello";
+String str2 = str.toUpperCase(); 
+
+4. toLowerCase() - converts string into lower case
+
+String str = "HELLO";
+String str2 = str.toLowerCase(); 
+
+5. indexOf()   - this function searches a character in the string for its first occurance and returns an int value which is the location or index of the character in the string.
+
+String city = "Amravati";
+int loc = city.indexOf('a'); [ loc = 3 ]
+
+6. lastIndexOf()   - this function searches a character in the string for its last occurance and returns an int value which is the location or index of the character in the string.
+
+String city = "Amravati";
+int loc = city.lastIndexOf('a'); [ loc = 6 ]
+
+7. contains()   - this function checks if a string is available in another string. If the string is available then returns true and if not available it returns false.
+
+String str = "Hello and welcome";
+if(str.contains("and"))
+     System.out.println("String available");
+else
+     System.out.println("String not available");
+
+8. substring()  - this is a very useful function and it is used to extract a part of string into another string, It passes 2 parameters 1. starting index and number of characters from begining.
+
+String str = "Hello and welcome";
+String str2 = str.substring(0,5); // Hello
+String str2 = str.substring(6,9); // 
+
+9. charAt()  -- it returns a single characters at a given index location in a string.
+
+String str = "Hello and welcome";
+char c = str.charAt(10);  [ c = 'w' ]
+
+10. concat() -- it joins two string into a third string
+String str1 = "Hello";
+String str2 = " and welcome";
+String str3 = str1.concat(str2);
+String str3 = str1 + str2;
+
+11. trim()  -- it removes spaces from the begining or the end of string.         
+and not from the middle of the string.
+ sdmfvsdfs,m 
+String str1 = "  Hel  lo   ";
+System.out.println(" Str = " + str.trim());
+
+12. split() -- this function converts a sentence into an array of strings. The words in the sentence should be separated by some delimiting character.
+
+String str = "This is a sentence in java";
+String[] sarray = str.split(" ");
+
+2. StringBuffer / StringBuilder
+
+- StringBuffer class is an implementation of "growable string" as against the String class which is non-growable string.
+
+- This class provides facility for maniputlating string by adding data into a stringbuffer object, replacing data and deleting data from the stringbuffer.
+
+- The stringbuffer can grow in size or reduce in size.
+
+- It is very useful class when a string length is not known and should be modified during run time.
+
+- The object of the string buffer class can be created by various methods.
+
+- The StringBuffer class comes from java.util package.
+
+ex.
+StringBuffer sbf = new StringBuffer(); // capacity = 16  
+-- empty or default constructor
+
+StringBuffer sbf = new StringBuffer("Hello"); 
+-- 16 + data constructor with a string parameters
+
+StringBuffer sbf = new StringBuffer(200); 
+-- constructor with initial capacity of 200 characters
+-- The default capacity of StrigBuffer is 16 characters.
+
+- There are many useful functions in this class.
+
+1. capacity() 	2. length()	  3. append()	      4. insert()		
+5. delete()     6. replace()	7. indexOf()	8. lastIndexOf()	
+9. reverse()	  10. substring() 11. toString()	12. charAt()	13. deleteCharAt()
+
+1. capacity() -- this function returns an int value which is the current capacity of stringbuffer.
+
+int capacity()
+ex. 
+StringBuffer sbf = new StringBuffer("welcome");
+int cap = sbf.capacity();
+
+2. length() -- returns the actual length of data in the string buffer.
+
+int length()
+ex. 
+StringBuffer sbf = new StringBuffer("welcome");
+int len = sbf.length();
+
+3. append()  -- this functions appends data at the end of a string buffer. Any data can be appended or added of any data type like string, int, long, float etc. but it gets converted into string.
+
+ex. 
+StringBuffer sbf = new StringBuffer("welcome");
+sbf.append("to string buffer ");
+sbf.append(35);
+sbf.append(60.78f);
+sbf.append(" in java ");
+sbf.append('a');
+
+4. insert()  - this function inserts data in the middle of the string buffer. There are 2 parameters passed to this function
+
+1. starting position
+2. data to string
+
+StringBuffer sbf = new StringBuffer("welcome to string buffer");
+sbf.insert(10," java ");
+
+5. delete()  -- it deletes a part of a string buffer and passes 2 parameters
+1. starting location and 2. no of characters from begining of string to delete.
+
+StringBuffer sbf = new StringBuffer("welcome to string buffer");
+sbf.delete(11,17);
+
+6. replace()  -- it replaces a part of a string by another string. It also passes 3 parameters 
+1. staring position
+2. ending position from begining
+3. string to replace
+
+StringBuffer sbf = new StringBuffer("welcome to string buffer");
+sbf.replace(8,10,"at");
+
+7. indexOf()  8. lastIndexOf()
+
+- These functions are same as the String class function to find the 1st occurance indexOf() and the last occurance lastIndexOf().
+
+13. deleteCharAt()
+- It deletes a single character at the given position
+
+sbf.deleteCharAt(10);
+
+3. StringTokenizer
+
+- This class also comes from java.util package.
+- This class is used to extract tokens from a string object
+- The tokens are the sub-string delimited by some characters
+
+String s = "This is a new string";  
+delimiter or word separator space
+
+- The StringTokenizer object extracts tokens from a string which are delimited by some character.
+
+String s = "This:is:a:new:string";
+StringTokenizer stk = new StringTokenizer(s,":");
+
+- The object of the StringTokenizer is created by passing 2 parameters to the constructors 1. String 2. Delimiter
+
+1. countTokens()   - This functions returns total number of tokens in the object. In out case it will return 5
+
+2. hasMoreTokens() - This function is used to check the tokens in the objext.
+
+3. nextToken() -- It returns a string value of the current token.
+
+String s = "This:is:a:new:string";
+StringTokenizer stk = new StringTokenizer(s,":");
+
+4. Vector 
+
+- Vector implements a dynamic array.
+
+- The normal java array are static and can not grow or reduce in size.
+
+int[] a = new int[10];
+
+- It is similar to ArrayList class (collection class),With two differences.
+
+1. Vector is synchronized, and 
+2. Vector contains many legacy (old) and default methods that are not part of the collection classes.
+
+- Vector can be created by 3 methods
+- Vector object can be initialized by 3 methods
+- A vector object may contain data of any data type.
+- The Vector comes from java.util package.
+
+Vector v = new Vector();       -- Default constructor with capacity 10
+Vector v = new Vector(5);      -- Constructor with initial capacity 5
+Vector v = new Vector(5,3);    -- Constructor with initial capacity 5 and increment with 3. 
+
+Vector functions
+
+1. add(int index, Object obj)         2. add(Object o)  
+--- deprecated function outdated and not supported
+
+3. addElement(Object o)             4. capacity()                         5. clear()                          6. contains()
+7. Object elementAt(int index)      8. Enumeration elements()  *** 
+9. equals(Object o)                 10. Object firstElement()             11. Object lastElement()            12. indexOf()
+13. lastIndexOf()                   14. remove(index)   ()     
+15. removeAllElements()
+
+- The Vector class can store data but can not enumerate i.e. visit or acces each element once.
+
+
+5. Enumeration
+
+- The Enumeration interface defines the methods which can enumerate 
+(access one item at a time) the elements in a collection of objects or vector        
+
+Enumeration e = v.elements();
+while(e.hasMoreElements())
+{
+  System.out.println("Element in vector = " + e.nextElement());
+}
+
+B. Wrapper classes
+
+- A wrapper class wraps (encloses) around a data type and gives it an object appearance. int, float, char, double, long, boolean,
+
+- Wherever, the data type is required as an object, this object can be used. 
+
+- Wrapper classes include methods to unwrap the object and give back the data type. 
+
+- It can be compared with a chocolate. 
+
+- The manufacturer wraps the chocolate with some foil or paper to prevent from pollution and . 
+
+- The user takes the chocolate, removes and throws the wrapper and eats it. 
+
+Data type     Wrapper class
+
+byte          Byte 
+short         Short 
+int           Integer 
+long          Long 
+float         Float 
+double        Double 
+char          Character 
+boolean       Boolean  
+
+- The wrapper class object if printed it automatically unwraps the data.
+ex.
+
+int a = 20;
+Integer i = new Integer(a);  --- wrap the data
+
+int m = i.intValue();        --- unwrap the data
+
+Other functions of wrapper classes
+1. intValue() -- unwraps an Integer object
+2. floatValue() -- unwraps an Float object
+3. byteValue() -- unwraps an Byte object
+4. longValue() -- unwraps an Long object
+5. shortValue() -- unwraps an Short object
+
+- All data coinversion function come from wrapper classes
+
+Integer.parseInt(), Float.parseFloat(), Long.parseLong(), Double.parseDouble();
+
+String x = "30";
+int y = Integer.parseInt(x);
+
+
+Applet programming using Java
+
+Introduction to applets
+
+- Java language can be used to develop two types of programs
+
+   1. Java applications    2. Java Applets
+
+- The Java applications are generally of two types i.e. console application mean non-GUI program that runs on b/w screen.
+
+- The Java application can also be GUI based application windows application developed in AWT or Swing.
+
+- The Java applets are "GUI-Only programs" that are window based developed using either awt or swing.
+
+- The Java applets are small programs than applications that do not have main() function like a java application. The applets are comparitively smaller in size than the Java applications.
+
+- The Java applet has init() function or initialization function. almost same as the main() function.
+
+- The java applet is embeded or included into HTML document using a special tag <applet> and executed on the web browser or appletviewer.
+
+- The java application executes on dos prompt but applet executes on web browser.
+
+- A java applet does not have a frame but it can have all other GUI controls like Panel, Label, TextField, Button etc.
+
+- A java applet can be developed by using Applet as the base class this class comes from java.applet package
+
+ex.
+
+Differences between Application and Applet
+
+java application               Java Applet
+
+1. Larger in size              Smaller in size
+2. Has main() function         does not have main() but init()   
+3. Runs on command prompt      Embeded into HTML runs in web browser
+4. Requires a frame            Does not require frame
+5. class can be public or not  class is always public
+6. Console or GUI              Applet is always GUI based
+
+- all applet functions come from java.applet package.
+
+- an applect class is created by any name but with super class Applet or JApplet
+
+- awt applet can be created using Aplet class and swing applet can be created using JApplet class.
+
+import java.applet.*;
+
+public class MyApplet extends Applet
+{
+  ---
+  ---
+}
+
+- A java applet can also be develped by using base class JApplet
+
+import javax.swing.*;
+
+public class MyApplet extends JApplet
+{
+  ---
+  ---
+}
+
+Applet life cycle
+
+- An applet get initailized by init() function which is the first function that executes as soon as applet is run.
+
+- An applet may contain a constructor which is executed before init().
+
+- If an applet has a constructor then it is executed before init().
+
+- The applet starts executing by using start() function. This function is  internally called by init() and may not be written in a program
+
+- A stop() function can be used to stop a running applet.
+
+- destroy() function is executed when an applet goes out scope or when the web page is closed.
+
+The general functions used in an applet program are...
+
+1. init()  - first function to execute on applet execution 
+2. start() - this function is invoked by init() 
+3. stop()  - the applet stops running.
+4. destroy() - the appet gets destroyed completely
+
+5. paint()   - used for drawing objects on the applets used in graphics
+6. repaint()  - used in Graphics Programming for refresh the graphics. 
+
+- The paint() function is used to draw graphics on the applet screen using graphical object like line, circle, oval, rectangle, polygon etc.
+- The repaint() function to redraw the applet area. It refreshes the applet screen.
+
+- The Applet is embeded into html.
+
+<html>
+
+
+<applet code="MyApplet.class" width="500" height="500" documentbase="d:\myjava"
+
+</applet>
+
+</html>
+
+- the getCodeBase() function in an applet gets the path of the current directory.
+
+like d:\myapplet
+
+- the getDocumentBase() is a function also written in an applet and it returns the path of the HTML file.
+
+1. An applet example for form or UI form.
+2. An applet example for Swing data form or UI form.
+3. Applet with drawing capability.
+
+Graphics programming using Java
+
+- Java has a very powerful graphics capability and can be used to draw 2D and 3D graphics.
+
+- Many powerful games are written in Java
+
+- Java supports all types graphics features required for drawing and developing games and animations.
+
+- All graphics classes come java.awt package.
+
+- The applets are very appropriate programs to draw graphics
+
+- The paint() function is used to write statement for all drawing graphics.
+
+- There are 3 important graphics classes common used in drawing program all come from java.awt package
+
+1. Graphics   2. Color    3. Font
+
+1. Grphics class
+
+- It is an abstract class and the object of this class is passed as parameters to the paint() function.
+
+ex.
+
+public void paint(Graphics g)
+{
+  g.drawLine();
+}
+
+- There are many drawing functions in Graphics class to draw graphicsl objects on the screen.
+1. drawLine() -----
+2. drawRect() ----
+3. drawRoundRect()
+4. drawOval()
+5. drawPolygon()
+6. drawString()
+7. drawImage
+8. fillRect()
+9. fillRoundRect()
+10. fillOval()
+11. fillPolygon()
+
+1. drawLine()
+
+- This function draws a line using 4 co-ordinates x1,y1 and x2,y2
+
+g.drawLine(10,10,100,100);
+
+2. drawRect()
+
+- This function draws a recatngle on the applet screen and it passes 4 parameters x1,y1 and width, height.
+- X1 and Y1 are starting parameters and width and height ending parameters of rectangle
+
+g.drawRect(10,10,100,100);
+
+3. drawRoundRect()
+
+- It also draws a rectangle having roundsed corners in stead of sharp corners of recatngle.
+- It passes 6 parameters x1,y1,w,h,xradius,yradius
+
+g.drawRoundRect(10,10,100,100,20,20);
+
+4. drawOval()
+
+- This function can be used to draw an oval or a circle.
+- It also passes 4 parameters i.e. x1,y1,x2,y2
+- If both the x2 and y2 radius are same then it draws a circle.
+- If x2 is larger than y2 then horizontal elipse is drawn and vice versa
+
+g.drawOval(10,10,100,100);
+
+5. drawPolygon()
+
+- The polygon is multiside graphical object drawn using set of polypoints.
+- The polypoints can be declared an a single dimension int array, each pair consists of x and y point
+- The array should contain the last xy ponint as the starting points.
+- The drawPolygon() function passes 3 parameters 
+- x array, yarray and no of popyloints
+
+ex.
+int xpts[] = { 100,150, 50,100};
+int ypts[] = { 100,150, 150,100};
+g.drawPolygon(pts,4);
+
+6. drawString()
+
+- The drawString() function draws a text or string on the applet 
+- It passes 3 parameters
+1. string to draw
+2. x location
+3. y location
+
+g.drawString("Hello and welcome",100,100);
+
+- Font class
+
+- The Font class comes from java.awt package.
+- It is used to create a new Font by passing 3 parameters to the constructor
+
+1. Font Name
+2. Font Style
+3. Font Size
+
+- A setFont() function can be used to set the newly created font.
+- there are 3 styles
+Font.BOLD, Font.ITALIC,Font.PLAIN, Font.STRIKEOUT
+
+ex.
+
+Font f1 = new Font("Arial",Font.BOLD,25);
+setFont(f1);
+
+Color class
+- The Color class is used to create a color object to set as background color or foreground color.
+- The background colotr is the complete applet background color
+- The foreground color is the drawing color.
+- The setBackgound() function can be used to set the background color of applet
+- The setForeground() function can be used to set the drawing color.
+
+ex. 1 to set colors
+
+setBackground(Color.YELLOW);
+setForeground(Color.RED);
+
+- Java contains a set of fixed color constants which can be accessed by Color class and the name of color in capital letters using dot operator.
+
+creating custom color
+- A custom color can be created by using Color object and and instantiating the object by 3 parameters of RBG values in the range of 0 - 255.
+- setForeground() and setBackground() can be used to set the new color.
+
+ex.
+
+Color c1 = new Color(100,150,200);
+setForeground(c1);
+
+7. drawImage
+
+- to draw image on the graphics screen.
+- The function passes four parameters
+
+1. Object of image class
+2. x location 
+3. y location
+4. this keyword whish refers current object in menory.
+
+ex.
+
+Image img;
+
+public void init()
+{
+  img = getImage(getCodeBase(),"desert.jpg");
+}
+
+- The getCodeBase() function is used to specify the directory of the image.
+- By default it is the current directory or directory in which applet and HTML file is stored.
+
+public void paint(Graphics g)
+{
+   g.drawImage(img,10,10,this);
+}
+
+8. fillRect()
+9. fillRoundRect()
+10. fillOval()
+11. fillPolygon()
+
+- All these function draw the graphical object on the screen like rectangle, rounded rectangle, oval and polygon
+- Their parameters are same as the draw functions.
+- These functions draw the objects and fill them with color.
+- The color can be set by setColor() function.
+
+ex.
+setBackground(Color.YELLOW);
+setForeground(Color.RED);
+g.setColor(Color.PINK);
+g.drawOval(100,100,300,300);
+
+
+1. Applet
+2. Notepad
+3. Collection
+4. Package.
+
+

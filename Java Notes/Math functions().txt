@@ -1,0 +1,13 @@
+1] Math.abs(num); -7 = 7
+
+2] Math.ceil(num); 7.4 < 8
+
+3] Math.floor(num); 7.4 > 7
+
+4] Math.max(num1, num2); 
+
+5] Math.max(num1, num2);
+
+6] Math.pow(num1, num2);
+
+7] Math.sqrt(num); 

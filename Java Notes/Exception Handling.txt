@@ -1,0 +1,39 @@
+What is E-H? :-
+Exception Handling defines how our program reacts to a exceptional situation which can cause runtime error.
+
+It is a mechanism to handle runtime errors.
+
+Reasons :- 
+1] User Error.
+2] Programmer Error.
+3] Resources Error.
+
+What we can do :-
+1] Fix problem.
+2] Avoid problem.
+3] Exit application.
+4] Throw exception.
+5] Create a user defined exception handling mechanism, to replace an system exception (avoid chances of occuring error at run time).
+
+Example :- 
+1] ArithmeticException.
+2] NullPointerException.  
+
+Advantages :-
+1] Mainting normal flow of program.
+2] Meaningful runtime error reporting.
+
+Types :-
+1] Checked :- 
+	a] Known to compiler at compile time. They are checked at compiler time.
+	b] Error of these exceptions are generated at compile time and it must be resolved to run the program.
+	c] It can't be ignored.
+	d] FileNotFoundException.
+
+2 ] Un-checked
+	a] Un-known to compiler at compile time. They are not checked at compile time.
+	b] Error of these exceptions are generated at runtime and exits the application if any handling mechanism is not provided.
+	c] It can be ignored.
+	d] ArithmeticException: / by zero.
+
+Throws is used to tell the JVM that a checked exception can be thrown.

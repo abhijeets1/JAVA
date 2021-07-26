@@ -1,0 +1,9 @@
+StringBuffer.setCharAt(index, char);
+
+StringFuffer.append(String);
+
+StringBuffer.insert(index, char);
+
+StringBuffer.deleteCharAt(index);
+
+StringBuffer.reverse();

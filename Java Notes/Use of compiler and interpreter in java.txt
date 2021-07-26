@@ -1,0 +1,10 @@
+The JVM runtime executes bytecode by interpreting it or using a just-in-time compiler (JIT).
+
+The Java compiler translates Java source code into a platform independent language called Java bytecode. 
+Although bytecode is similar to machine language, but it is not the machine language of any actual computer.
+A Java interpreter or a just-in-time compiler (JIT) is used to run the compiled Java bytecode . 
+Each platform needs its own Java bytecode interpreter, but all these interpreters interpret the same bytecode. 
+
+JIT compiling, not interpreting, is used in most JVMs today to achieve greater speed.
+
+The JIT compiler reads the bytecodes in many sections and compiles them dynamically into machine language so the program can run faster. A traditional interpreted virtual machine will simply interpret the bytecode, generally with much lower performance. Currently JIT is used by most implementations of the HotSpot Java Virtual Machine.

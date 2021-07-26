@@ -1,0 +1,4 @@
+*] hasNext vs next :-
+	
+	hasNext() method returns true if iterator have more elements.
+	next() method returns the next element and also moves cursor pointer to the next element.

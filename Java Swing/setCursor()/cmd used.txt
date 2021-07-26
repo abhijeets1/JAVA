@@ -1,0 +1,11 @@
+jar -cfm file_name.jar menifest.txt *
+
+c - create jar file
+
+f - files to include
+
+m - menifest
+
+
+
+java -jar JAR.jar

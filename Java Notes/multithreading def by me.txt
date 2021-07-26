@@ -1,0 +1,1 @@
+independent mutiple task of a program at same time is MultiThreading.

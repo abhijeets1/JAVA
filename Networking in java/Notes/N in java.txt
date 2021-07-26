@@ -1,0 +1,11 @@
+Connection-oriented socket programming :-
+
+Socket
+ServerSocket
+
+
+
+Connection-less socket programming :-
+
+DatagramSocket
+DatagramPacket

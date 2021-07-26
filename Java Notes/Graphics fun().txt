@@ -1,0 +1,22 @@
+1] drawString(String, x, y);
+
+2] drawLine(x1, y1, x2, y2);
+
+3] drawRect(x, y, w, h);
+
+4] drawRoundrect(x, y, w, h, xcurve, ycurve);
+
+5] drawOval(x, y, w, h);
+
+6] drawArc(x, y, w, h, sa, ma);
+
+7] drawPolygon(x[], y[], sides);
+
+8] to 13] fil...();
+
+Font(Font name, Font.PLAIN, 50);
+Color(r, g, b);
+
+9] draw3DRect(x, y, w, h, boolean raised);
+
+10] fill3DRect(x, y, w, h, boolean raised);

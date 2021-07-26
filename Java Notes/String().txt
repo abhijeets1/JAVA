@@ -1,0 +1,33 @@
+string.charAt(index);
+
+string.length();
+
+string.toString();
+
+string.valueOf();
+
+string.replace(char, char);
+
+string.compareTo(string);
+
+string.toCharArray();
+
+string.toUpperCase();
+string.toLowerCase();
+
+string.indexOf(char);
+string.indexOf(char, startindex);
+string.indexOf(String);
+string.indexOf(String, startindex);
+
+string.lastIndexOf(char);
+string.lastIndexOf(char, startindex);
+string.lastIndexOf(String);
+string.lastIndexOf(String, startindex);
+
+string.subString(startindex);
+string.subString(startindex, endindex);
+
+string.equalsIgnoreCase(string);
+string.equals(string); 
+

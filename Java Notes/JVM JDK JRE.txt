@@ -1,0 +1,38 @@
+JVM :-
+
+1] It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed.
+
+2] JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.
+
+3] The JVM performs the following main tasks:
+
+* Loads code
+* Verifies code
+* Executes code
+* Provides runtime environment
+
+
+
+
+
+JRE :-
+
+1] The Java Runtime Environment is a set of software tools which are used for developing Java applications.
+
+2]  It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.
+
+
+
+
+
+JDK :-
+
+1] The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets.
+
+2] It physically exists. It contains JRE + development tools.
+
+3] The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+
+
+
